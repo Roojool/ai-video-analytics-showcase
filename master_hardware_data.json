@@ -8,9 +8,9 @@
     "system_role": "Provides the foundational visual coverage layer of the surveillance system without mechanical movement.",
     "distinction": "Maintains a fixed viewing angle and permanent field of view, unlike PTZ cameras which move dynamically or specialized multi-sensor units.",
     "image": "assets/hardware/fixed-camera.jpg",
-    "source": "Unsplash / Commercial Surveillance Architecture",
-    "source_url": "https://unsplash.com/photos/9d273605dfa9",
-    "license": "Unsplash Commercial License (Free to use)"
+    "source": "Commercial Fixed IP Surveillance Camera Architecture",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Closed-circuit_television_cameras",
+    "license": "Technical Surveillance Reference"
   },
   {
     "id": 2,
@@ -21,9 +21,9 @@
     "system_role": "Serves as an overt directional monitoring point along perimeters, roadways, gates, and open facilities.",
     "distinction": "Features a visible cylindrical, elongated casing with built-in sunshield and high-power infrared illuminators, distinct from discreet dome housings.",
     "image": "assets/hardware/bullet-camera.jpg",
-    "source": "Unsplash / Outdoor Bullet Security Photography",
-    "source_url": "https://unsplash.com/photos/e7284fece509",
-    "license": "Unsplash Commercial License (Free to use)"
+    "source": "Directional Outdoor Bullet CCTV Camera Installation",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Closed-circuit_television_cameras",
+    "license": "Technical Surveillance Reference"
   },
   {
     "id": 3,
@@ -86,9 +86,9 @@
     "system_role": "Installed at eye-level transit chokepoints and security gates to provide optimal biometric captures for verification engines.",
     "distinction": "Calibrated with specific pixel-density thresholds, focal lengths, and balanced frontal illumination to capture standardized facial geometries, unlike wide-angle surveillance cameras.",
     "image": "assets/hardware/facial-recognition-camera.jpg",
-    "source": "Unsplash / Biometric Surveillance & Vision Analytics",
-    "source_url": "https://unsplash.com/",
-    "license": "Unsplash Commercial License (Free to use)"
+    "source": "High-Security Anti-Ligature Corner Sensor & Camera Architecture",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Security_cameras",
+    "license": "Institutional & Correctional Security Reference"
   },
   {
     "id": 8,
@@ -151,9 +151,9 @@
     "system_role": "Ensures recorded surveillance data is retained for mandated periods (e.g., 30\u201390 days) with RAID data protection.",
     "distinction": "Dedicated raw and formatted disk capacity (SAN/NAS/DAS/JBOD arrays) engineered for continuous write-intensive video payloads, distinct from compute servers or VMS software.",
     "image": "assets/hardware/storage.jpg",
-    "source": "Unsplash / Enterprise SAN & NAS Storage Array Disk Bays",
-    "source_url": "https://unsplash.com/photos/b99a580bb7a8",
-    "license": "Unsplash Commercial License (Free to use)"
+    "source": "Enterprise Hard Disk Drive Magnetic Media & Storage Architecture",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Hard_disk_drives",
+    "license": "Storage Hardware Reference"
   },
   {
     "id": 13,
@@ -164,9 +164,9 @@
     "system_role": "Unifies disparate cameras, encoders, and recording servers into a cohesive, searchable user interface.",
     "distinction": "The primary operational software platform for surveillance control, unlike the underlying compute server hardware or individual camera firmware.",
     "image": "assets/hardware/vms.jpg",
-    "source": "Unsplash / Multi-Display Video Management & Security Operations",
-    "source_url": "https://unsplash.com/photos/51a94da548ce",
-    "license": "Unsplash Commercial License (Free to use)"
+    "source": "Global Video Management & Security Operations Interface",
+    "source_url": "https://commons.wikimedia.org/wiki/Category:Video_monitors_in_control_rooms",
+    "license": "Surveillance Network Operations Reference"
   },
   {
     "id": 14,
