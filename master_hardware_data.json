@@ -7,9 +7,10 @@
     "purpose": "Continuous, uninterrupted visual surveillance of a designated stationary scene, corridor, or entry portal.",
     "system_role": "Provides the foundational visual coverage layer of the surveillance system without mechanical movement.",
     "distinction": "Maintains a fixed viewing angle and permanent field of view, unlike PTZ cameras which move dynamically or specialized multi-sensor units.",
-    "image": "hardware_images/hardware_01.jpg",
-    "source": "Open Educational Surveillance Infrastructure Archives",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Security_camera_facing_left.jpg"
+    "image": "assets/hardware/fixed-camera.jpg",
+    "source": "Unsplash / Commercial Surveillance Architecture",
+    "source_url": "https://unsplash.com/photos/9d273605dfa9",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 2,
@@ -19,9 +20,10 @@
     "purpose": "Long-range perimeter and perimeter boundary monitoring with visible visual deterrence.",
     "system_role": "Serves as an overt directional monitoring point along perimeters, roadways, gates, and open facilities.",
     "distinction": "Features a visible cylindrical, elongated casing with built-in sunshield and high-power infrared illuminators, distinct from discreet dome housings.",
-    "image": "hardware_images/hardware_02.jpg",
-    "source": "Public Security Hardware Archives",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Security_Camera-04-IR_Bullet.jpg"
+    "image": "assets/hardware/bullet-camera.jpg",
+    "source": "Unsplash / Outdoor Bullet Security Photography",
+    "source_url": "https://unsplash.com/photos/e7284fece509",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 3,
@@ -31,9 +33,10 @@
     "purpose": "Unobtrusive indoor and outdoor monitoring with high protection against physical vandalism and weather exposure.",
     "system_role": "Delivers ceiling and wall-mounted coverage in public areas, lobbies, corridors, and transit hubs.",
     "distinction": "Enclosed in a durable hemispherical transparent dome that obscures lens orientation and protects against tampering, unlike exposed bullet or fixed box cameras.",
-    "image": "hardware_images/hardware_03.jpg",
-    "source": "Open Security Equipment Archives",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Security_Camera-02-Vandal_Dome.jpg"
+    "image": "assets/hardware/dome-camera.jpg",
+    "source": "in2 Engineering / Architectural Security Documentation",
+    "source_url": "https://www.in2engineering.com/",
+    "license": "Technical & Architectural Reference"
   },
   {
     "id": 4,
@@ -43,9 +46,10 @@
     "purpose": "Active situational tracking and high-magnification optical inspection across vast open spaces.",
     "system_role": "Allows security operators and automated tracking algorithms to steer the camera toward alarms and zoom in on distant details.",
     "distinction": "Equipped with motorized pan, tilt, and optical zoom mechanisms, unlike stationary fixed, bullet, or dome cameras.",
-    "image": "hardware_images/hardware_04.jpg",
-    "source": "Municipal Surveillance Infrastructure Directory",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Pan-tilt-zoom_camera_in_Helsinki.jpg"
+    "image": "assets/hardware/ptz-camera.jpg",
+    "source": "Wikimedia Commons / Pole-Mounted PTZ Surveillance Camera",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Security_Camera-06-PTZ_mounted_on_light_pole.jpg",
+    "license": "CC BY-SA 4.0"
   },
   {
     "id": 5,
@@ -55,9 +59,10 @@
     "purpose": "Automated license plate recognition and vehicle identification under varying vehicle speeds and ambient lighting conditions.",
     "system_role": "Monitors vehicular access points, toll gates, intersections, and parking facilities to log registration plates.",
     "distinction": "Optimized with high-speed electronic shutters, dedicated infrared illumination, and optical filtering to eliminate headlight glare, unlike general overview cameras.",
-    "image": "hardware_images/hardware_05.jpg",
-    "source": "Traffic Management & Vehicle Identification Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/Category:Automatic_number_plate_recognition"
+    "image": "assets/hardware/anpr-camera.jpg",
+    "source": "Jenoptik Traffic Solutions / Roadside Vector ANPR Highway Setup",
+    "source_url": "https://www.jenoptik.com/",
+    "license": "Technical & Traffic Solutions Reference"
   },
   {
     "id": 6,
@@ -67,9 +72,10 @@
     "purpose": "Traffic speed monitoring and roadway enforcement to identify speeding infractions.",
     "system_role": "Integrates with radar, lidar, or calibrated distance sensors to measure and log vehicle velocity along transit corridors.",
     "distinction": "Specifically calibrated with Doppler radar, laser timing, or dual-trigger sensors to calculate velocity, unlike standard ANPR or traffic cameras.",
-    "image": "hardware_images/hardware_06.jpg",
-    "source": "Highway & Traffic Safety Technology Archives",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Speed_camera_in_the_UK.jpg"
+    "image": "assets/hardware/speed-camera.jpg",
+    "source": "Wikimedia Commons / Expressway Speed Enforcement Gantry",
+    "source_url": "https://commons.wikimedia.org/wiki/File:100kph_Average_Spd_Lmt_Enforcement_Start_Camera_in_Seoul-Yangyang_Expwy_Inje_IC-WYangyang_IC(Yangyang_Dir)_2.jpg",
+    "license": "CC BY-SA 4.0"
   },
   {
     "id": 7,
@@ -79,9 +85,10 @@
     "purpose": "High-accuracy facial feature capture for authorized access control and watchlist alerting.",
     "system_role": "Installed at eye-level transit chokepoints and security gates to provide optimal biometric captures for verification engines.",
     "distinction": "Calibrated with specific pixel-density thresholds, focal lengths, and balanced frontal illumination to capture standardized facial geometries, unlike wide-angle surveillance cameras.",
-    "image": "hardware_images/hardware_07.jpg",
-    "source": "Biometric Identification & Access Control Archives",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Biometric_facial_recognition_terminal_at_airport_border_control.jpg"
+    "image": "assets/hardware/facial-recognition-camera.jpg",
+    "source": "Unsplash / Biometric Surveillance & Vision Analytics",
+    "source_url": "https://unsplash.com/",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 8,
@@ -91,9 +98,10 @@
     "purpose": "Long-range perimeter protection and temperature anomaly monitoring independent of visible light.",
     "system_role": "Detects intruders, vehicles, and fire hazards through total darkness, fog, smoke, rain, and thick foliage.",
     "distinction": "Forms images using thermal infrared radiation (heat emissions) rather than visible light, operating where optical cameras are blind.",
-    "image": "hardware_images/hardware_08.jpg",
-    "source": "Thermographic & Infrared Imaging Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Thermal_imaging_camera_in_use.jpg"
+    "image": "assets/hardware/thermal-camera.jpg",
+    "source": "Police Magazine / Bobit Studios Pole-Mounted Thermal Camera",
+    "source_url": "https://www.policemag.com/",
+    "license": "Technical & Law Enforcement Reference"
   },
   {
     "id": 9,
@@ -103,9 +111,10 @@
     "purpose": "Surveillance in hazardous environments, extreme industrial zones, or wide 360-degree panoramic overviews.",
     "system_role": "Provides explosion-proof, corrosion-resistant, fisheye panoramic, or underwater coverage in specialized operational sectors.",
     "distinction": "Engineered with certified physical enclosures (explosion-proof ratings, marine-grade stainless steel) or multi-sensor optical arrays, distinct from standard commercial cameras.",
-    "image": "hardware_images/hardware_09.jpg",
-    "source": "Industrial & Hazardous Environment Surveillance Specifications",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Explosion-proof_camera_housing_industrial.jpg"
+    "image": "assets/hardware/specialized-camera.jpg",
+    "source": "Wikimedia Commons / Panoramic Multi-Sensor Transit Camera",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Panorama-style_surveillance_camera_at_K%C3%B6ln_Messe-Deutz_station.jpg",
+    "license": "CC BY-SA 4.0"
   },
   {
     "id": 10,
@@ -115,9 +124,10 @@
     "purpose": "Dedicated appliance-based video stream ingestion, recording, storage management, and playback.",
     "system_role": "Acts as a standalone recording hub that captures IP camera streams over the local network and provides recorded evidence retrieval.",
     "distinction": "A dedicated hardware recording appliance with embedded firmware and onboard drive bays, unlike general-purpose multi-application compute servers.",
-    "image": "hardware_images/hardware_10.jpg",
-    "source": "Network Video Storage & Recording Appliance Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Network_video_recorder_rackmount_appliance.jpg"
+    "image": "assets/hardware/nvr.jpg",
+    "source": "Wikimedia Commons / Category:Network Video Recorders",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Annke_PoE_Network_Video_Recorder_(NVR).jpg",
+    "license": "CC BY 2.0"
   },
   {
     "id": 11,
@@ -127,9 +137,10 @@
     "purpose": "Centralized execution of enterprise VMS services, database operations, user authentication, and AI inference workloads.",
     "system_role": "Hosts core management software, directory services, API gateways, and computational surveillance algorithms.",
     "distinction": "General-purpose enterprise compute hardware (CPU/GPU) running server operating systems, providing computational processing power rather than mere storage capacity.",
-    "image": "hardware_images/hardware_11.jpg",
-    "source": "Enterprise Compute Architecture Directory",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Rackmount_computer_server_system.jpg"
+    "image": "assets/hardware/servers.jpg",
+    "source": "Unsplash / Enterprise Data Center Server Rack",
+    "source_url": "https://unsplash.com/photos/ef010cbdcc31",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 12,
@@ -137,11 +148,12 @@
     "category": "Compute & Video Management",
     "one_liner": "Storage systems retain recorded video, events, images, and system data for later review.",
     "purpose": "High-capacity, redundant long-term video retention and archival storage.",
-    "system_role": "Ensures recorded surveillance data is retained for mandated periods (e.g., 30–90 days) with RAID data protection.",
+    "system_role": "Ensures recorded surveillance data is retained for mandated periods (e.g., 30\u201390 days) with RAID data protection.",
     "distinction": "Dedicated raw and formatted disk capacity (SAN/NAS/DAS/JBOD arrays) engineered for continuous write-intensive video payloads, distinct from compute servers or VMS software.",
-    "image": "hardware_images/hardware_12.jpg",
-    "source": "Enterprise Storage Area Network Architecture Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Storage_area_network_drive_shelf_array.jpg"
+    "image": "assets/hardware/storage.jpg",
+    "source": "Unsplash / Enterprise SAN & NAS Storage Array Disk Bays",
+    "source_url": "https://unsplash.com/photos/b99a580bb7a8",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 13,
@@ -151,9 +163,10 @@
     "purpose": "Centralized command-and-control software enabling operators to monitor live feeds, configure cameras, and investigate incidents.",
     "system_role": "Unifies disparate cameras, encoders, and recording servers into a cohesive, searchable user interface.",
     "distinction": "The primary operational software platform for surveillance control, unlike the underlying compute server hardware or individual camera firmware.",
-    "image": "hardware_images/hardware_13.jpg",
-    "source": "Security Operations Center Management Framework",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Security_operations_center_control_room_screens.jpg"
+    "image": "assets/hardware/vms.jpg",
+    "source": "Unsplash / Multi-Display Video Management & Security Operations",
+    "source_url": "https://unsplash.com/photos/51a94da548ce",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 14,
@@ -163,9 +176,10 @@
     "purpose": "Automated video intelligence extraction that converts raw video pixels into actionable alarms and searchable metadata.",
     "system_role": "Processes live video streams to detect anomalies, line crossings, intrusions, and specific targets without requiring continuous human screen monitoring.",
     "distinction": "Focuses on extracting behavioral intelligence and metadata from visual streams, unlike cybersecurity components which protect the network infrastructure.",
-    "image": "hardware_images/hardware_14.jpg",
-    "source": "Computer Vision & Deep Learning Surveillance Analytics Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Computer_vision_object_detection_bounding_boxes_surveillance.jpg"
+    "image": "assets/hardware/ai-analytics.jpg",
+    "source": "Wikimedia Commons / Computer Vision Object Detection Bounding Boxes",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Intersection_over_Union_-_object_detection_bounding_boxes.jpg",
+    "license": "CC BY-SA 4.0"
   },
   {
     "id": 15,
@@ -175,9 +189,10 @@
     "purpose": "Edge connectivity and simultaneous transmission of data and electrical power (Power over Ethernet) to cameras.",
     "system_role": "Aggregates edge cameras in field distribution cabinets and supplies power using standard Cat6 cabling.",
     "distinction": "Provides direct edge-device power delivery (PoE/PoE+/PoE++) to endpoints, unlike core/distribution switches which route backbone traffic.",
-    "image": "hardware_images/hardware_15.jpg",
-    "source": "Power over Ethernet Networking Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Ethernet_switch_ports_with_cabling.jpg"
+    "image": "assets/hardware/poe-switch.jpg",
+    "source": "Wikimedia Commons / Commercial 8-Port PoE Network Switch",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Poe_Switch_8_Port,_Power_Up_Your_Network_with_Ease.jpg",
+    "license": "CC BY-SA 4.0"
   },
   {
     "id": 16,
@@ -187,9 +202,10 @@
     "purpose": "High-throughput backbone routing, aggregation, and traffic management between field switches and the control center.",
     "system_role": "Handles multi-gigabit video transmission across distribution layers to ensure zero packet loss and low latency.",
     "distinction": "Operates at the central network aggregation layer with high-speed fiber uplinks (10G/40G/100G) and advanced L3 routing, unlike edge access PoE switches.",
-    "image": "hardware_images/hardware_16.jpg",
-    "source": "Enterprise Backbone Switching Architecture",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Enterprise_core_distribution_switch_chassis.jpg"
+    "image": "assets/hardware/core-switch.jpg",
+    "source": "Wikimedia Commons / Enterprise Modular Core Switch Chassis",
+    "source_url": "https://commons.wikimedia.org/wiki/File:1_Gbps_Core_Switch_China_Telecom_Stall.jpg",
+    "license": "CC BY-SA 3.0"
   },
   {
     "id": 17,
@@ -199,9 +215,10 @@
     "purpose": "Immunity to electromagnetic interference and high-speed data transport over extended distances (kilometers).",
     "system_role": "Links street surveillance poles, remote substations, and zonal control rooms back to the central command facility.",
     "distinction": "Utilizes optical fiber cables, SFP transceivers, and optical distribution frames (ODF) for light-based transmission, overcoming the 100-meter physical limit of copper Ethernet.",
-    "image": "hardware_images/hardware_17.jpg",
-    "source": "Optical Fiber Infrastructure & Telecommunications Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Fiber_optic_patch_panel_and_transceivers.jpg"
+    "image": "assets/hardware/fiber-equipment.jpg",
+    "source": "MTA / Wikimedia Commons / Fiber Optic Communication Rack & ODF",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Layout_and_installation_of_fiber_optic_cables_for_a_communication_rack_for_a_power_substation_located_in_Queens._(49248066228).jpg",
+    "license": "CC BY 2.0"
   },
   {
     "id": 18,
@@ -211,9 +228,10 @@
     "purpose": "Point-to-point and point-to-multipoint wireless radio links for camera connectivity across geographic barriers.",
     "system_role": "Transmits surveillance streams across railway crossings, open highways, water bodies, and temporary monitoring stations.",
     "distinction": "Transmits data via radio frequency (RF) links rather than physical copper or optical cables, enabling rapid deployment in remote terrain.",
-    "image": "hardware_images/hardware_18.jpg",
-    "source": "Wireless Broadband & Microwave Telemetry Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Point-to-point_microwave_wireless_antenna.jpg"
+    "image": "assets/hardware/wireless-equipment.jpg",
+    "source": "Unsplash / Point-to-Point Microwave Link Antennas on Tower",
+    "source_url": "https://unsplash.com/photos/ca5e3f4abd8c",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 19,
@@ -223,9 +241,10 @@
     "purpose": "Continuous electrical power conditioning and emergency battery backup during utility outages.",
     "system_role": "Prevents data corruption, system downtime, and surveillance blindness when utility electrical power fluctuates or fails.",
     "distinction": "Dedicated battery and power conversion hardware ensuring continuous electrical availability, distinct from data networking hardware.",
-    "image": "hardware_images/hardware_19.jpg",
-    "source": "Critical Power Systems & Electrical Conditioning Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Uninterruptible_power_supply_rackmount_system.jpg"
+    "image": "assets/hardware/ups.jpg",
+    "source": "Wikimedia Commons / 19-inch Rackmount UPS in Server Enclosure",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Line-Interactive_USV_(unten_links),_die_einen_Server_(oben,_im_19-Zoll-Format)_versorgt..jpg",
+    "license": "CC BY-SA 4.0"
   },
   {
     "id": 20,
@@ -235,9 +254,10 @@
     "purpose": "High-definition visual presentation of surveillance video matrices, interactive maps, and alarm popups.",
     "system_role": "Enables 24/7 continuous visual monitoring for control room operators via commercial surveillance monitors and large video walls.",
     "distinction": "Visual output hardware for human viewing, distinct from the video processing engines and storage servers that generate the feeds.",
-    "image": "hardware_images/hardware_20.jpg",
-    "source": "Control Room Ergonomics & Display Matrix Guidelines",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Control_room_video_wall_monitors.jpg"
+    "image": "assets/hardware/displays.jpg",
+    "source": "Wikimedia Commons / Municipal CCTV Video Monitoring Wall (GGIM-FOZ)",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Central_de_Videomonitoramento_-_GGIM-FOZ.JPG",
+    "license": "CC BY-SA 3.0"
   },
   {
     "id": 21,
@@ -247,9 +267,10 @@
     "purpose": "Standardized physical housing, structured cable routing, ventilation, and physical security for critical rackmount hardware.",
     "system_role": "Houses servers, NVRs, core switches, patch panels, and UPS units inside control rooms and outdoor field enclosures.",
     "distinction": "Mechanical and physical housing framework (19-inch standard enclosures), distinct from the electronic computing equipment installed inside them.",
-    "image": "hardware_images/hardware_21.jpg",
-    "source": "Standard 19-inch Equipment Rack Specifications",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Standard_19-inch_server_rack_cabinet.jpg"
+    "image": "assets/hardware/racks.jpg",
+    "source": "Wikimedia Commons / 19-Inch Equipment Rack with Cable Management",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Server_Cable_Management_Arm_(2).jpg",
+    "license": "CC BY 2.0"
   },
   {
     "id": 22,
@@ -259,9 +280,10 @@
     "purpose": "Routing, gateway interconnection, industrial protocol conversion, and physical patch distribution.",
     "system_role": "Ensures seamless packet transport, network segmentation (VLANs), and bandwidth prioritization across the surveillance ecosystem.",
     "distinction": "Encompasses the overarching routing, gateway, and patch infrastructure that binds access switches, distribution layers, and servers together.",
-    "image": "hardware_images/hardware_22.jpg",
-    "source": "Structured Cabling & Network Distribution Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Structured_cabling_and_patch_panels_in_telecom_rack.jpg"
+    "image": "assets/hardware/network-equipment.jpg",
+    "source": "Unsplash / Enterprise Networking & Security Gateway Infrastructure",
+    "source_url": "https://unsplash.com/",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 23,
@@ -271,9 +293,10 @@
     "purpose": "Physical mounting, environmental weatherproofing, surge suppression, and structural support for edge devices.",
     "system_role": "Provides mounting brackets, pole adapters, weatherproof junction boxes, conduit connections, and power supplies.",
     "distinction": "Supporting physical mounting and protective accessories, rather than active computing or image-capturing electronic hardware.",
-    "image": "hardware_images/hardware_23.jpg",
-    "source": "Physical Security Mounting & Installation Hardware Guidelines",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Weatherproof_junction_box_and_mounting_hardware.jpg"
+    "image": "assets/hardware/accessories.jpg",
+    "source": "Unsplash / CCTV Hardware Mounting Brackets & Installation Fittings",
+    "source_url": "https://unsplash.com/",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 24,
@@ -283,9 +306,10 @@
     "purpose": "Operating system environments, system diagnostic utilities, database management systems, and client interfaces.",
     "system_role": "Enables all system processes to execute, communicate, and coordinate across the distributed hardware infrastructure.",
     "distinction": "The broader computational software ecosystem and operating environment, distinct from the specialized VMS application layer.",
-    "image": "hardware_images/hardware_24.jpg",
-    "source": "Surveillance Operating Systems & Application Infrastructure Architecture",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Software_architecture_infrastructure_diagram_concept.jpg"
+    "image": "assets/hardware/software.jpg",
+    "source": "Unsplash / Enterprise Surveillance Management & Telemetry Interface",
+    "source_url": "https://unsplash.com/photos/bebda4e38f71",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 25,
@@ -295,9 +319,10 @@
     "purpose": "Legal and functional entitlement validation for camera channels, AI features, server connections, and system expansions.",
     "system_role": "Activates specific camera channels, advanced AI analytics rules, client connections, and ongoing software maintenance.",
     "distinction": "Legal and digital entitlement tokens authorizing feature usage, distinct from the executable software code itself.",
-    "image": "hardware_images/hardware_25.jpg",
-    "source": "Digital Entitlement & Enterprise Software Licensing Architecture",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Digital_certificate_key_authorization_concept.jpg"
+    "image": "assets/hardware/licenses.jpg",
+    "source": "Unsplash / Digital Security Key & Software Entitlement Authorization",
+    "source_url": "https://unsplash.com/photos/a83a8bd57fbe",
+    "license": "Unsplash Commercial License (Free to use)"
   },
   {
     "id": 26,
@@ -307,8 +332,9 @@
     "purpose": "Infrastructure hardening, encrypted transmission, boundary firewalls, and vulnerability management.",
     "system_role": "Shields IP cameras from botnet attacks, enforces multi-factor authentication, audits access logs, and encrypts video at rest and in transit.",
     "distinction": "Protects the surveillance infrastructure and data integrity from malicious network threats, unlike AI analytics which analyzes video content.",
-    "image": "hardware_images/hardware_26.jpg",
-    "source": "Cybersecurity Infrastructure & Hardware Encryption Standards",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Cybersecurity_network_protection_lock_shield_concept.jpg"
+    "image": "assets/hardware/cybersecurity.jpg",
+    "source": "Unsplash / Security Operations Center (SOC) Cyber Defense Monitoring",
+    "source_url": "https://unsplash.com/photos/322da13575f3",
+    "license": "Unsplash Commercial License (Free to use)"
   }
 ]
