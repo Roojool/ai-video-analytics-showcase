@@ -14,7 +14,8 @@
     "video_author": "Axis Communications",
     "video_url": "https://www.youtube.com/watch?v=0bEGbHb0T4U",
     "embed_url": "https://www.youtube-nocookie.com/embed/0bEGbHb0T4U?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/0bEGbHb0T4U/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/0bEGbHb0T4U/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
     "video_author": "Hikvision UK & Ireland",
     "video_url": "https://www.youtube.com/watch?v=_epwi9mp8is",
     "embed_url": "https://www.youtube-nocookie.com/embed/_epwi9mp8is?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/_epwi9mp8is/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/_epwi9mp8is/hqdefault.jpg",
+    "thumbnail_variant": "hqdefault.jpg"
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     "video_author": "Axis Technical Support Videos",
     "video_url": "https://www.youtube.com/watch?v=eNJyNZDzLIk",
     "embed_url": "https://www.youtube-nocookie.com/embed/eNJyNZDzLIk?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/eNJyNZDzLIk/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/eNJyNZDzLIk/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
     "video_author": "Axis Communications",
     "video_url": "https://www.youtube.com/watch?v=hUqbbtxr8e4",
     "embed_url": "https://www.youtube-nocookie.com/embed/hUqbbtxr8e4?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/hUqbbtxr8e4/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/hUqbbtxr8e4/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
     "video_author": "BoardTac Solutions (Dahua AI Systems)",
     "video_url": "https://www.youtube.com/watch?v=tmpgZZKaT5E",
     "embed_url": "https://www.youtube-nocookie.com/embed/tmpgZZKaT5E?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/tmpgZZKaT5E/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/tmpgZZKaT5E/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
     "video_author": "Axis Communications USA",
     "video_url": "https://www.youtube.com/watch?v=Gla20ImaJe0",
     "embed_url": "https://www.youtube-nocookie.com/embed/Gla20ImaJe0?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/Gla20ImaJe0/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/Gla20ImaJe0/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
     "video_author": "Axis Technical Support Videos",
     "video_url": "https://www.youtube.com/watch?v=ij5RFVBtMt0",
     "embed_url": "https://www.youtube-nocookie.com/embed/ij5RFVBtMt0?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/ij5RFVBtMt0/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/ij5RFVBtMt0/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 8,
@@ -133,7 +140,8 @@
     "video_author": "Daten & Wissen AI Surveillance",
     "video_url": "https://www.youtube.com/watch?v=U7zW_LxNssE",
     "embed_url": "https://www.youtube-nocookie.com/embed/U7zW_LxNssE?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/U7zW_LxNssE/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/U7zW_LxNssE/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 9,
@@ -150,7 +158,8 @@
     "video_author": "Axis Technical Support Videos",
     "video_url": "https://www.youtube.com/watch?v=5bWSiwir0lU",
     "embed_url": "https://www.youtube-nocookie.com/embed/5bWSiwir0lU?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/5bWSiwir0lU/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/5bWSiwir0lU/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 10,
@@ -167,7 +176,8 @@
     "video_author": "Hikvision Europe",
     "video_url": "https://www.youtube.com/watch?v=gZSajFBy3r4",
     "embed_url": "https://www.youtube-nocookie.com/embed/gZSajFBy3r4?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/gZSajFBy3r4/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/gZSajFBy3r4/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 11,
@@ -184,7 +194,8 @@
     "video_author": "BriefCam Video Analytics",
     "video_url": "https://www.youtube.com/watch?v=RYphFq0-Wso",
     "embed_url": "https://www.youtube-nocookie.com/embed/RYphFq0-Wso?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/RYphFq0-Wso/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/RYphFq0-Wso/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 12,
@@ -201,7 +212,8 @@
     "video_author": "Axis Communications",
     "video_url": "https://www.youtube.com/watch?v=J8qbMr9-L38",
     "embed_url": "https://www.youtube-nocookie.com/embed/J8qbMr9-L38?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/J8qbMr9-L38/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/J8qbMr9-L38/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 13,
@@ -218,7 +230,8 @@
     "video_author": "Axis Communications North Asia",
     "video_url": "https://www.youtube.com/watch?v=LnbrwjBYaqk",
     "embed_url": "https://www.youtube-nocookie.com/embed/LnbrwjBYaqk?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/LnbrwjBYaqk/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/LnbrwjBYaqk/sddefault.jpg",
+    "thumbnail_variant": "sddefault.jpg"
   },
   {
     "id": 14,
@@ -235,7 +248,8 @@
     "video_author": "Hanwha Vision Europe",
     "video_url": "https://www.youtube.com/watch?v=PSx43EjK0CY",
     "embed_url": "https://www.youtube-nocookie.com/embed/PSx43EjK0CY?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/PSx43EjK0CY/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/PSx43EjK0CY/sddefault.jpg",
+    "thumbnail_variant": "sddefault.jpg"
   },
   {
     "id": 15,
@@ -252,7 +266,8 @@
     "video_author": "Keenfinity Group (Bosch Security)",
     "video_url": "https://www.youtube.com/watch?v=nTOKFhM0Fik",
     "embed_url": "https://www.youtube-nocookie.com/embed/nTOKFhM0Fik?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/nTOKFhM0Fik/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/nTOKFhM0Fik/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 16,
@@ -269,7 +284,8 @@
     "video_author": "Security Camera King",
     "video_url": "https://www.youtube.com/watch?v=0jKgfpuRY1A",
     "embed_url": "https://www.youtube-nocookie.com/embed/0jKgfpuRY1A?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/0jKgfpuRY1A/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/0jKgfpuRY1A/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 17,
@@ -286,7 +302,8 @@
     "video_author": "Dahua Technology",
     "video_url": "https://www.youtube.com/watch?v=ucgweAnw0fQ",
     "embed_url": "https://www.youtube-nocookie.com/embed/ucgweAnw0fQ?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/ucgweAnw0fQ/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/ucgweAnw0fQ/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 18,
@@ -303,7 +320,8 @@
     "video_author": "Keenfinity Group (Bosch Security)",
     "video_url": "https://www.youtube.com/watch?v=f-egY7SsZUI",
     "embed_url": "https://www.youtube-nocookie.com/embed/f-egY7SsZUI?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/f-egY7SsZUI/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/f-egY7SsZUI/sddefault.jpg",
+    "thumbnail_variant": "sddefault.jpg"
   },
   {
     "id": 19,
@@ -320,7 +338,8 @@
     "video_author": "Security Camera King",
     "video_url": "https://www.youtube.com/watch?v=Oi9DfQTLHMA",
     "embed_url": "https://www.youtube-nocookie.com/embed/Oi9DfQTLHMA?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/Oi9DfQTLHMA/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/Oi9DfQTLHMA/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 20,
@@ -337,7 +356,8 @@
     "video_author": "DAVANTIS Perimeter Security",
     "video_url": "https://www.youtube.com/watch?v=FetFl09y3Qg",
     "embed_url": "https://www.youtube-nocookie.com/embed/FetFl09y3Qg?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/FetFl09y3Qg/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/FetFl09y3Qg/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 21,
@@ -354,7 +374,8 @@
     "video_author": "DAHUA TECHNOLOGY INDIA",
     "video_url": "https://www.youtube.com/watch?v=sjGR-y-zm4Y",
     "embed_url": "https://www.youtube-nocookie.com/embed/sjGR-y-zm4Y?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/sjGR-y-zm4Y/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/sjGR-y-zm4Y/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 22,
@@ -371,7 +392,8 @@
     "video_author": "Hanwha Vision America",
     "video_url": "https://www.youtube.com/watch?v=fjKLwHxnPHU",
     "embed_url": "https://www.youtube-nocookie.com/embed/fjKLwHxnPHU?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/fjKLwHxnPHU/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/fjKLwHxnPHU/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 23,
@@ -388,7 +410,8 @@
     "video_author": "AI-Bot Eye Systems",
     "video_url": "https://www.youtube.com/watch?v=POnW3LvPG1c",
     "embed_url": "https://www.youtube-nocookie.com/embed/POnW3LvPG1c?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/POnW3LvPG1c/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/POnW3LvPG1c/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 24,
@@ -405,7 +428,8 @@
     "video_author": "Axis Communications",
     "video_url": "https://www.youtube.com/watch?v=goOfXwgqG3Y",
     "embed_url": "https://www.youtube-nocookie.com/embed/goOfXwgqG3Y?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/goOfXwgqG3Y/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/goOfXwgqG3Y/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 25,
@@ -422,7 +446,8 @@
     "video_author": "Hanwha Vision Europe",
     "video_url": "https://www.youtube.com/watch?v=18aTYzvL9DA",
     "embed_url": "https://www.youtube-nocookie.com/embed/18aTYzvL9DA?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/18aTYzvL9DA/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/18aTYzvL9DA/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 26,
@@ -439,7 +464,8 @@
     "video_author": "Hikvision Corporate Channel",
     "video_url": "https://www.youtube.com/watch?v=QWQctTGYbjE",
     "embed_url": "https://www.youtube-nocookie.com/embed/QWQctTGYbjE?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/QWQctTGYbjE/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/QWQctTGYbjE/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 27,
@@ -456,7 +482,8 @@
     "video_author": "HIKVISION MEA",
     "video_url": "https://www.youtube.com/watch?v=2HVDI0Lr5EA",
     "embed_url": "https://www.youtube-nocookie.com/embed/2HVDI0Lr5EA?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/2HVDI0Lr5EA/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/2HVDI0Lr5EA/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   },
   {
     "id": 28,
@@ -473,6 +500,7 @@
     "video_author": "Milesight Security",
     "video_url": "https://www.youtube.com/watch?v=HTKbnzz4Ty4",
     "embed_url": "https://www.youtube-nocookie.com/embed/HTKbnzz4Ty4?rel=0",
-    "thumbnail_url": "https://img.youtube.com/vi/HTKbnzz4Ty4/hqdefault.jpg"
+    "thumbnail_url": "https://i.ytimg.com/vi/HTKbnzz4Ty4/maxresdefault.jpg",
+    "thumbnail_variant": "maxresdefault.jpg"
   }
 ]

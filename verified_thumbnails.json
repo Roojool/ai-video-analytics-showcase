@@ -1,0 +1,170 @@
+{
+  "1": {
+    "name": "Face Detection",
+    "video_id": "0bEGbHb0T4U",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/0bEGbHb0T4U/maxresdefault.jpg"
+  },
+  "2": {
+    "name": "Face Recognition, where legally authorized",
+    "video_id": "_epwi9mp8is",
+    "best_variant": "hqdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/_epwi9mp8is/hqdefault.jpg"
+  },
+  "3": {
+    "name": "Person Detection",
+    "video_id": "eNJyNZDzLIk",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/eNJyNZDzLIk/maxresdefault.jpg"
+  },
+  "4": {
+    "name": "Vehicle Detection",
+    "video_id": "hUqbbtxr8e4",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/hUqbbtxr8e4/maxresdefault.jpg"
+  },
+  "5": {
+    "name": "Human/Vehicle Classification",
+    "video_id": "tmpgZZKaT5E",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/tmpgZZKaT5E/maxresdefault.jpg"
+  },
+  "6": {
+    "name": "Line Crossing",
+    "video_id": "Gla20ImaJe0",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/Gla20ImaJe0/maxresdefault.jpg"
+  },
+  "7": {
+    "name": "Intrusion Detection",
+    "video_id": "ij5RFVBtMt0",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/ij5RFVBtMt0/maxresdefault.jpg"
+  },
+  "8": {
+    "name": "Restricted Area Detection",
+    "video_id": "U7zW_LxNssE",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/U7zW_LxNssE/maxresdefault.jpg"
+  },
+  "9": {
+    "name": "Loitering Detection",
+    "video_id": "5bWSiwir0lU",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/5bWSiwir0lU/maxresdefault.jpg"
+  },
+  "10": {
+    "name": "Crowd Detection",
+    "video_id": "gZSajFBy3r4",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/gZSajFBy3r4/maxresdefault.jpg"
+  },
+  "11": {
+    "name": "Crowd Density Analysis",
+    "video_id": "RYphFq0-Wso",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/RYphFq0-Wso/maxresdefault.jpg"
+  },
+  "12": {
+    "name": "People Counting",
+    "video_id": "J8qbMr9-L38",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/J8qbMr9-L38/maxresdefault.jpg"
+  },
+  "13": {
+    "name": "Occupancy Counting",
+    "video_id": "LnbrwjBYaqk",
+    "best_variant": "sddefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/LnbrwjBYaqk/sddefault.jpg"
+  },
+  "14": {
+    "name": "Direction Detection",
+    "video_id": "PSx43EjK0CY",
+    "best_variant": "sddefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/PSx43EjK0CY/sddefault.jpg"
+  },
+  "15": {
+    "name": "Wrong-Way Movement Detection",
+    "video_id": "nTOKFhM0Fik",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/nTOKFhM0Fik/maxresdefault.jpg"
+  },
+  "16": {
+    "name": "Abandoned Object Detection",
+    "video_id": "0jKgfpuRY1A",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/0jKgfpuRY1A/maxresdefault.jpg"
+  },
+  "17": {
+    "name": "Missing Object Detection",
+    "video_id": "ucgweAnw0fQ",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/ucgweAnw0fQ/maxresdefault.jpg"
+  },
+  "18": {
+    "name": "Object Removal Detection",
+    "video_id": "f-egY7SsZUI",
+    "best_variant": "sddefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/f-egY7SsZUI/sddefault.jpg"
+  },
+  "19": {
+    "name": "Scene Change Detection",
+    "video_id": "Oi9DfQTLHMA",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/Oi9DfQTLHMA/maxresdefault.jpg"
+  },
+  "20": {
+    "name": "Camera Tampering Detection",
+    "video_id": "FetFl09y3Qg",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/FetFl09y3Qg/maxresdefault.jpg"
+  },
+  "21": {
+    "name": "Video Loss Detection",
+    "video_id": "sjGR-y-zm4Y",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/sjGR-y-zm4Y/maxresdefault.jpg"
+  },
+  "22": {
+    "name": "Defocus Detection",
+    "video_id": "fjKLwHxnPHU",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/fjKLwHxnPHU/maxresdefault.jpg"
+  },
+  "23": {
+    "name": "Camera Obstruction Detection",
+    "video_id": "POnW3LvPG1c",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/POnW3LvPG1c/maxresdefault.jpg"
+  },
+  "24": {
+    "name": "Perimeter Protection",
+    "video_id": "goOfXwgqG3Y",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/goOfXwgqG3Y/maxresdefault.jpg"
+  },
+  "25": {
+    "name": "Fall Detection, where applicable",
+    "video_id": "18aTYzvL9DA",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/18aTYzvL9DA/maxresdefault.jpg"
+  },
+  "26": {
+    "name": "Fire/Smoke Detection, where supported",
+    "video_id": "QWQctTGYbjE",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/QWQctTGYbjE/maxresdefault.jpg"
+  },
+  "27": {
+    "name": "Vehicle/person tracking",
+    "video_id": "2HVDI0Lr5EA",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/2HVDI0Lr5EA/maxresdefault.jpg"
+  },
+  "28": {
+    "name": "Behaviour/event-based analytics where legally and technically appropriate",
+    "video_id": "HTKbnzz4Ty4",
+    "best_variant": "maxresdefault.jpg",
+    "best_url": "https://i.ytimg.com/vi/HTKbnzz4Ty4/maxresdefault.jpg"
+  }
+}

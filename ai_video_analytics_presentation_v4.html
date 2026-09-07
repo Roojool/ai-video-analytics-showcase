@@ -487,10 +487,16 @@
       gap: 16px;
     }
 
+    .slide-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 0;
+      max-width: 100%;
+    }
+
     .slide-cat-badge {
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 6px;
+      display: inline-block !important;
       font-size: 0.70rem;
       font-weight: 700;
       padding: 4px 10px;
@@ -498,9 +504,14 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
       white-space: nowrap !important;
-      flex-shrink: 0 !important;
-      width: fit-content;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box !important;
+      flex-shrink: 1 !important;
       font-family: var(--font-stack);
+      vertical-align: middle;
     }
 
     .slide-title {
@@ -872,6 +883,11 @@
       background: var(--bg-card);
     }
 
+    .analytic-card > div:first-child {
+      min-width: 0;
+      max-width: 100%;
+    }
+
     .card-top {
       display: flex;
       align-items: center;
@@ -879,6 +895,8 @@
       gap: 8px;
       margin-bottom: 8px;
       flex-wrap: nowrap;
+      min-width: 0;
+      max-width: 100%;
     }
 
     .card-num {
@@ -888,7 +906,7 @@
       background: rgba(255, 255, 255, 0.05);
       padding: 2px 8px;
       border-radius: 4px;
-      flex-shrink: 0;
+      flex-shrink: 0 !important;
       white-space: nowrap;
     }
 
@@ -900,9 +918,14 @@
       text-transform: uppercase;
       letter-spacing: 0.03em;
       white-space: nowrap !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      flex-shrink: 0 !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box !important;
+      flex-shrink: 1 !important;
+      display: inline-block !important;
+      vertical-align: middle;
     }
 
     .card-title {
@@ -928,10 +951,10 @@
     .card-thumb-wrap {
       position: relative;
       width: 100%;
-      padding-top: 56.25%;
+      aspect-ratio: 16 / 9;
       border-radius: 8px;
       overflow: hidden;
-      background: #000;
+      background: #000000;
       border: 1px solid var(--border-subtle);
       cursor: pointer;
     }
@@ -1101,7 +1124,8 @@
     }
 
     .col-cat {
-      min-width: 190px;
+      min-width: 160px;
+      max-width: 240px;
       white-space: nowrap;
     }
 
@@ -1110,8 +1134,13 @@
       padding: 2px 8px;
       border-radius: 4px;
       white-space: nowrap !important;
-      display: inline-flex !important;
-      align-items: center !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      box-sizing: border-box !important;
+      display: inline-block !important;
+      vertical-align: middle;
     }
 
     .col-demo, .col-desc, .col-role {
@@ -1358,7 +1387,7 @@
             <tr>
               <td class="col-num">01</td>
               <td class="col-name">Face Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Detection & Recognition</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Detection & Recognition">Detection & Recognition</span></td>
               <td class="col-demo">AXIS Face Detector - Loss Prevention Demonstration</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(1)">Open Slide</button>
@@ -1367,7 +1396,7 @@
             <tr>
               <td class="col-num">02</td>
               <td class="col-name">Face Recognition, where legally authorized</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Detection & Recognition</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Detection & Recognition">Detection & Recognition</span></td>
               <td class="col-demo">How to Set Up Facial Recognition on HikCentral Professional</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(2)">Open Slide</button>
@@ -1376,7 +1405,7 @@
             <tr>
               <td class="col-num">03</td>
               <td class="col-name">Person Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Detection & Recognition</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Detection & Recognition">Detection & Recognition</span></td>
               <td class="col-demo">Object in Area Scenario: Human Target Detection (AXIS Object Analytics)</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(3)">Open Slide</button>
@@ -1385,7 +1414,7 @@
             <tr>
               <td class="col-num">04</td>
               <td class="col-name">Vehicle Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Detection & Recognition</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Detection & Recognition">Detection & Recognition</span></td>
               <td class="col-demo">AXIS Object Analytics - Edge AI Vehicle & Object Detection</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(4)">Open Slide</button>
@@ -1394,7 +1423,7 @@
             <tr>
               <td class="col-num">05</td>
               <td class="col-name">Human/Vehicle Classification</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Detection & Recognition</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Detection & Recognition">Detection & Recognition</span></td>
               <td class="col-demo">Dahua WizSense AI CCTV Explained: How AI Cameras Classify People & Vehicles</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(5)">Open Slide</button>
@@ -1403,7 +1432,7 @@
             <tr>
               <td class="col-num">06</td>
               <td class="col-name">Line Crossing</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Movement & Zone Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Movement & Zone Analytics">Movement & Zone Analytics</span></td>
               <td class="col-demo">AXIS Object Analytics - Virtual Line Crossing Detection</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(6)">Open Slide</button>
@@ -1412,7 +1441,7 @@
             <tr>
               <td class="col-num">07</td>
               <td class="col-name">Intrusion Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Movement & Zone Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Movement & Zone Analytics">Movement & Zone Analytics</span></td>
               <td class="col-demo">Configuration & Demonstration: AXIS Motion Guard Intrusion Detection</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(7)">Open Slide</button>
@@ -1421,7 +1450,7 @@
             <tr>
               <td class="col-num">08</td>
               <td class="col-name">Restricted Area Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Movement & Zone Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Movement & Zone Analytics">Movement & Zone Analytics</span></td>
               <td class="col-demo">AI Real-Time Alerts for Restricted No-Entry Zone Violations</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(8)">Open Slide</button>
@@ -1430,7 +1459,7 @@
             <tr>
               <td class="col-num">09</td>
               <td class="col-name">Loitering Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Movement & Zone Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Movement & Zone Analytics">Movement & Zone Analytics</span></td>
               <td class="col-demo">Detecting Dwell Time & Loitering Using AXIS Object Analytics</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(9)">Open Slide</button>
@@ -1439,7 +1468,7 @@
             <tr>
               <td class="col-num">10</td>
               <td class="col-name">Crowd Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);">Crowd & Counting Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);" title="Crowd & Counting Analytics">Crowd & Counting Analytics</span></td>
               <td class="col-demo">People Gathering & Abnormal Crowd Detection Demo</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(10)">Open Slide</button>
@@ -1448,7 +1477,7 @@
             <tr>
               <td class="col-num">11</td>
               <td class="col-name">Crowd Density Analysis</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);">Crowd & Counting Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);" title="Crowd & Counting Analytics">Crowd & Counting Analytics</span></td>
               <td class="col-demo">Visualizing & Managing Occupancy and Crowd Density with Video Analytics</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(11)">Open Slide</button>
@@ -1457,7 +1486,7 @@
             <tr>
               <td class="col-num">12</td>
               <td class="col-name">People Counting</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);">Crowd & Counting Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);" title="Crowd & Counting Analytics">Crowd & Counting Analytics</span></td>
               <td class="col-demo">AXIS People Counter - Operational Insight Beyond Footfall</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(12)">Open Slide</button>
@@ -1466,7 +1495,7 @@
             <tr>
               <td class="col-num">13</td>
               <td class="col-name">Occupancy Counting</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);">Crowd & Counting Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);" title="Crowd & Counting Analytics">Crowd & Counting Analytics</span></td>
               <td class="col-demo">Real-Time Occupancy Control Solution with AXIS Occupancy Estimator</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(13)">Open Slide</button>
@@ -1475,7 +1504,7 @@
             <tr>
               <td class="col-num">14</td>
               <td class="col-name">Direction Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Movement & Zone Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Movement & Zone Analytics">Movement & Zone Analytics</span></td>
               <td class="col-demo">Wisenet X Direction Detection Video Analytics Demonstration</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(14)">Open Slide</button>
@@ -1484,7 +1513,7 @@
             <tr>
               <td class="col-num">15</td>
               <td class="col-name">Wrong-Way Movement Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Movement & Zone Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Movement & Zone Analytics">Movement & Zone Analytics</span></td>
               <td class="col-demo">Bosch Security - Video Analytics - Wrong-Way Movement Detection</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(15)">Open Slide</button>
@@ -1493,7 +1522,7 @@
             <tr>
               <td class="col-num">16</td>
               <td class="col-name">Abandoned Object Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Object Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Object Analytics">Object Analytics</span></td>
               <td class="col-demo">What is IVS? Abandoned Object Feature Demonstration</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(16)">Open Slide</button>
@@ -1502,7 +1531,7 @@
             <tr>
               <td class="col-num">17</td>
               <td class="col-name">Missing Object Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Object Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Object Analytics">Object Analytics</span></td>
               <td class="col-demo">Dahua IVS Missing Object Detection Live Demo</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(17)">Open Slide</button>
@@ -1511,7 +1540,7 @@
             <tr>
               <td class="col-num">18</td>
               <td class="col-name">Object Removal Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Object Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Object Analytics">Object Analytics</span></td>
               <td class="col-demo">Bosch Security - Video Analytics - Removed Object Detection Demo</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(18)">Open Slide</button>
@@ -1520,7 +1549,7 @@
             <tr>
               <td class="col-num">19</td>
               <td class="col-name">Scene Change Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Object Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Object Analytics">Object Analytics</span></td>
               <td class="col-demo">What is IVS? Scene Change Detection Feature Demonstration</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(19)">Open Slide</button>
@@ -1529,7 +1558,7 @@
             <tr>
               <td class="col-num">20</td>
               <td class="col-name">Camera Tampering Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);">Camera Health</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);" title="Camera Health">Camera Health</span></td>
               <td class="col-demo">Alarm Activation When Detecting Camera Tampering (Perimeter Security)</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(20)">Open Slide</button>
@@ -1538,7 +1567,7 @@
             <tr>
               <td class="col-num">21</td>
               <td class="col-name">Video Loss Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);">Camera Health</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);" title="Camera Health">Camera Health</span></td>
               <td class="col-demo">Automated PTZ Tour & Alarm Linkage Triggered on Video Loss</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(21)">Open Slide</button>
@@ -1547,7 +1576,7 @@
             <tr>
               <td class="col-num">22</td>
               <td class="col-name">Defocus Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);">Camera Health</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);" title="Camera Health">Camera Health</span></td>
               <td class="col-demo">How to Set Up Defocus Detection on Hanwha Vision AI Cameras</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(22)">Open Slide</button>
@@ -1556,7 +1585,7 @@
             <tr>
               <td class="col-num">23</td>
               <td class="col-name">Camera Obstruction Detection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);">Camera Health</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(244, 63, 94, 0.1); color: #F43F5E; border: 1px solid rgba(244, 63, 94, 0.35);" title="Camera Health">Camera Health</span></td>
               <td class="col-demo">CCTV Camera Tampering & Lens Obstruction Alert Demo</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(23)">Open Slide</button>
@@ -1565,7 +1594,7 @@
             <tr>
               <td class="col-num">24</td>
               <td class="col-name">Perimeter Protection</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Movement & Zone Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Movement & Zone Analytics">Movement & Zone Analytics</span></td>
               <td class="col-demo">AXIS Perimeter Defender PTZ Autotracking Demonstration</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(24)">Open Slide</button>
@@ -1574,7 +1603,7 @@
             <tr>
               <td class="col-num">25</td>
               <td class="col-name">Fall Detection, where applicable</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(251, 146, 60, 0.1); color: #FB923C; border: 1px solid rgba(251, 146, 60, 0.35);">Safety Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(251, 146, 60, 0.1); color: #FB923C; border: 1px solid rgba(251, 146, 60, 0.35);" title="Safety Analytics">Safety Analytics</span></td>
               <td class="col-demo">Slip & Fall Detection AI Camera Demonstration</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(25)">Open Slide</button>
@@ -1583,7 +1612,7 @@
             <tr>
               <td class="col-num">26</td>
               <td class="col-name">Fire/Smoke Detection, where supported</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(251, 146, 60, 0.1); color: #FB923C; border: 1px solid rgba(251, 146, 60, 0.35);">Safety Analytics</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(251, 146, 60, 0.1); color: #FB923C; border: 1px solid rgba(251, 146, 60, 0.35);" title="Safety Analytics">Safety Analytics</span></td>
               <td class="col-demo">Hikvision Thermal Optical Camera for Rapid Early Fire Detection</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(26)">Open Slide</button>
@@ -1592,7 +1621,7 @@
             <tr>
               <td class="col-num">27</td>
               <td class="col-name">Vehicle/person tracking</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);">Tracking & Behaviour</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);" title="Tracking & Behaviour">Tracking & Behaviour</span></td>
               <td class="col-demo">How to Configure Smart Tracking on PTZ (Human & Vehicle Auto-Tracking)</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(27)">Open Slide</button>
@@ -1601,7 +1630,7 @@
             <tr>
               <td class="col-num">28</td>
               <td class="col-name">Behaviour/event-based analytics where legally and technically appropriate</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);">Tracking & Behaviour</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);" title="Tracking & Behaviour">Tracking & Behaviour</span></td>
               <td class="col-demo">Milesight AI Violence & Abnormal Behavior Detection Demo</td>
               <td class="col-action">
                 <button class="table-action-btn" onclick="jumpToAISlide(28)">Open Slide</button>
@@ -1707,7 +1736,7 @@
             <tr>
               <td class="col-num">01</td>
               <td class="col-name">Fixed Cameras</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Continuous, uninterrupted visual surveillance of a designated stationary scene, corridor, or entry portal.</td>
               <td class="col-role">Provides the foundational visual coverage layer of the surveillance system without mechanical movement.</td>
               <td class="col-action">
@@ -1717,7 +1746,7 @@
             <tr>
               <td class="col-num">02</td>
               <td class="col-name">Bullet Cameras</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Long-range perimeter and perimeter boundary monitoring with visible visual deterrence.</td>
               <td class="col-role">Serves as an overt directional monitoring point along perimeters, roadways, gates, and open facilities.</td>
               <td class="col-action">
@@ -1727,7 +1756,7 @@
             <tr>
               <td class="col-num">03</td>
               <td class="col-name">Dome Cameras</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Unobtrusive indoor and outdoor monitoring with high protection against physical vandalism and weather exposure.</td>
               <td class="col-role">Delivers ceiling and wall-mounted coverage in public areas, lobbies, corridors, and transit hubs.</td>
               <td class="col-action">
@@ -1737,7 +1766,7 @@
             <tr>
               <td class="col-num">04</td>
               <td class="col-name">PTZ Cameras</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Active situational tracking and high-magnification optical inspection across vast open spaces.</td>
               <td class="col-role">Allows security operators and automated tracking algorithms to steer the camera toward alarms and zoom in on distant details.</td>
               <td class="col-action">
@@ -1747,7 +1776,7 @@
             <tr>
               <td class="col-num">05</td>
               <td class="col-name">ANPR Cameras</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Automated license plate recognition and vehicle identification under varying vehicle speeds and ambient lighting conditions.</td>
               <td class="col-role">Monitors vehicular access points, toll gates, intersections, and parking facilities to log registration plates.</td>
               <td class="col-action">
@@ -1757,7 +1786,7 @@
             <tr>
               <td class="col-num">06</td>
               <td class="col-name">Speed Detection Cameras</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Traffic speed monitoring and roadway enforcement to identify speeding infractions.</td>
               <td class="col-role">Integrates with radar, lidar, or calibrated distance sensors to measure and log vehicle velocity along transit corridors.</td>
               <td class="col-action">
@@ -1767,7 +1796,7 @@
             <tr>
               <td class="col-num">07</td>
               <td class="col-name">Facial Recognition Cameras, wherever authorized</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">High-accuracy facial feature capture for authorized access control and watchlist alerting.</td>
               <td class="col-role">Installed at eye-level transit chokepoints and security gates to provide optimal biometric captures for verification engines.</td>
               <td class="col-action">
@@ -1777,7 +1806,7 @@
             <tr>
               <td class="col-num">08</td>
               <td class="col-name">Thermal Cameras, wherever required</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Long-range perimeter protection and temperature anomaly monitoring independent of visible light.</td>
               <td class="col-role">Detects intruders, vehicles, and fire hazards through total darkness, fog, smoke, rain, and thick foliage.</td>
               <td class="col-action">
@@ -1787,7 +1816,7 @@
             <tr>
               <td class="col-num">09</td>
               <td class="col-name">Specialized Cameras</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);">Cameras</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(0, 229, 255, 0.1); color: #00E5FF; border: 1px solid rgba(0, 229, 255, 0.35);" title="Cameras">Cameras</span></td>
               <td class="col-desc">Surveillance in hazardous environments, extreme industrial zones, or wide 360-degree panoramic overviews.</td>
               <td class="col-role">Provides explosion-proof, corrosion-resistant, fisheye panoramic, or underwater coverage in specialized operational sectors.</td>
               <td class="col-action">
@@ -1797,7 +1826,7 @@
             <tr>
               <td class="col-num">10</td>
               <td class="col-name">NVRs</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);">Compute & Video Management</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);" title="Compute & Video Management">Compute & Video Management</span></td>
               <td class="col-desc">Dedicated appliance-based video stream ingestion, recording, storage management, and playback.</td>
               <td class="col-role">Acts as a standalone recording hub that captures IP camera streams over the local network and provides recorded evidence retrieval.</td>
               <td class="col-action">
@@ -1807,7 +1836,7 @@
             <tr>
               <td class="col-num">11</td>
               <td class="col-name">Servers</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);">Compute & Video Management</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);" title="Compute & Video Management">Compute & Video Management</span></td>
               <td class="col-desc">Centralized execution of enterprise VMS services, database operations, user authentication, and AI inference workloads.</td>
               <td class="col-role">Hosts core management software, directory services, API gateways, and computational surveillance algorithms.</td>
               <td class="col-action">
@@ -1817,7 +1846,7 @@
             <tr>
               <td class="col-num">12</td>
               <td class="col-name">Storage</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);">Compute & Video Management</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);" title="Compute & Video Management">Compute & Video Management</span></td>
               <td class="col-desc">High-capacity, redundant long-term video retention and archival storage.</td>
               <td class="col-role">Retains recorded video and surveillance data according to the configured retention policy with RAID data protection.</td>
               <td class="col-action">
@@ -1827,7 +1856,7 @@
             <tr>
               <td class="col-num">13</td>
               <td class="col-name">VMS</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);">Compute & Video Management</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);" title="Compute & Video Management">Compute & Video Management</span></td>
               <td class="col-desc">Centralized command-and-control software enabling operators to monitor live feeds, configure cameras, and investigate incidents.</td>
               <td class="col-role">Unifies disparate cameras, encoders, and recording servers into a cohesive, searchable user interface.</td>
               <td class="col-action">
@@ -1837,7 +1866,7 @@
             <tr>
               <td class="col-num">14</td>
               <td class="col-name">AI Analytics</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);">Compute & Video Management</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(56, 189, 248, 0.1); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.35);" title="Compute & Video Management">Compute & Video Management</span></td>
               <td class="col-desc">Automated video intelligence extraction that converts raw video pixels into actionable alarms and searchable metadata.</td>
               <td class="col-role">Processes live video streams to detect anomalies, line crossings, intrusions, and specific targets without requiring continuous human screen monitoring.</td>
               <td class="col-action">
@@ -1847,7 +1876,7 @@
             <tr>
               <td class="col-num">15</td>
               <td class="col-name">PoE Switches</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Networking & Connectivity</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Networking & Connectivity">Networking & Connectivity</span></td>
               <td class="col-desc">Edge connectivity and simultaneous transmission of data and electrical power (Power over Ethernet) to cameras.</td>
               <td class="col-role">Aggregates edge cameras in field distribution cabinets and supplies power using standard Cat6 cabling.</td>
               <td class="col-action">
@@ -1857,7 +1886,7 @@
             <tr>
               <td class="col-num">16</td>
               <td class="col-name">Core/Distribution Switches</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Networking & Connectivity</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Networking & Connectivity">Networking & Connectivity</span></td>
               <td class="col-desc">High-throughput backbone routing, aggregation, and traffic management between field switches and the control center.</td>
               <td class="col-role">Handles multi-gigabit video transmission across distribution layers to ensure high network reliability and low latency.</td>
               <td class="col-action">
@@ -1867,7 +1896,7 @@
             <tr>
               <td class="col-num">17</td>
               <td class="col-name">Fiber Equipment</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Networking & Connectivity</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Networking & Connectivity">Networking & Connectivity</span></td>
               <td class="col-desc">Immunity to electromagnetic interference and high-speed data transport over extended distances (kilometers).</td>
               <td class="col-role">Links street surveillance poles, remote substations, and zonal control rooms back to the central command facility.</td>
               <td class="col-action">
@@ -1877,7 +1906,7 @@
             <tr>
               <td class="col-num">18</td>
               <td class="col-name">Wireless Equipment</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Networking & Connectivity</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Networking & Connectivity">Networking & Connectivity</span></td>
               <td class="col-desc">Point-to-point and point-to-multipoint wireless radio links for camera connectivity across geographic barriers.</td>
               <td class="col-role">Transmits surveillance streams across railway crossings, open highways, water bodies, and temporary monitoring stations.</td>
               <td class="col-action">
@@ -1887,7 +1916,7 @@
             <tr>
               <td class="col-num">19</td>
               <td class="col-name">UPS</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Power, Control & Physical Infrastructure</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Power, Control & Physical Infrastructure">Power, Control & Physical Infrastructure</span></td>
               <td class="col-desc">Continuous electrical power conditioning and emergency battery backup during utility outages.</td>
               <td class="col-role">Prevents data corruption, system downtime, and surveillance blindness when utility electrical power fluctuates or fails.</td>
               <td class="col-action">
@@ -1897,7 +1926,7 @@
             <tr>
               <td class="col-num">20</td>
               <td class="col-name">Displays</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Power, Control & Physical Infrastructure</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Power, Control & Physical Infrastructure">Power, Control & Physical Infrastructure</span></td>
               <td class="col-desc">High-definition visual presentation of surveillance video matrices, interactive maps, and alarm popups.</td>
               <td class="col-role">Enables 24/7 continuous visual monitoring for control room operators via commercial surveillance monitors and large video walls.</td>
               <td class="col-action">
@@ -1907,7 +1936,7 @@
             <tr>
               <td class="col-num">21</td>
               <td class="col-name">Racks</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Power, Control & Physical Infrastructure</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Power, Control & Physical Infrastructure">Power, Control & Physical Infrastructure</span></td>
               <td class="col-desc">Standardized physical housing, structured cable routing, ventilation, and physical security for critical rackmount hardware.</td>
               <td class="col-role">Houses servers, NVRs, core switches, patch panels, and UPS units inside control rooms and outdoor field enclosures.</td>
               <td class="col-action">
@@ -1917,7 +1946,7 @@
             <tr>
               <td class="col-num">22</td>
               <td class="col-name">Network Equipment</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);">Networking & Connectivity</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(16, 185, 129, 0.1); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.35);" title="Networking & Connectivity">Networking & Connectivity</span></td>
               <td class="col-desc">Routing, gateway interconnection, industrial protocol conversion, and physical patch distribution.</td>
               <td class="col-role">Ensures seamless packet transport, network segmentation (VLANs), and bandwidth prioritization across the surveillance ecosystem.</td>
               <td class="col-action">
@@ -1927,7 +1956,7 @@
             <tr>
               <td class="col-num">23</td>
               <td class="col-name">Accessories</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);">Power, Control & Physical Infrastructure</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(245, 158, 11, 0.1); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.35);" title="Power, Control & Physical Infrastructure">Power, Control & Physical Infrastructure</span></td>
               <td class="col-desc">Physical mounting, environmental weatherproofing, surge suppression, and structural support for edge devices.</td>
               <td class="col-role">Provides mounting brackets, pole adapters, weatherproof junction boxes, conduit connections, and power supplies.</td>
               <td class="col-action">
@@ -1937,7 +1966,7 @@
             <tr>
               <td class="col-num">24</td>
               <td class="col-name">Software</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);">Software & Security</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);" title="Software & Security">Software & Security</span></td>
               <td class="col-desc">Operating system environments, system diagnostic utilities, database management systems, and client interfaces.</td>
               <td class="col-role">Enables all system processes to execute, communicate, and coordinate across the distributed hardware infrastructure.</td>
               <td class="col-action">
@@ -1947,7 +1976,7 @@
             <tr>
               <td class="col-num">25</td>
               <td class="col-name">Licenses</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);">Software & Security</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);" title="Software & Security">Software & Security</span></td>
               <td class="col-desc">Legal and functional entitlement validation for camera channels, AI features, server connections, and system expansions.</td>
               <td class="col-role">Activates specific camera channels, advanced AI analytics rules, client connections, and ongoing software maintenance.</td>
               <td class="col-action">
@@ -1957,7 +1986,7 @@
             <tr>
               <td class="col-num">26</td>
               <td class="col-name">Cybersecurity Components</td>
-              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);">Software & Security</span></td>
+              <td class="col-cat"><span class="table-cat-badge" style="background: rgba(167, 139, 250, 0.1); color: #A78BFA; border: 1px solid rgba(167, 139, 250, 0.35);" title="Software & Security">Software & Security</span></td>
               <td class="col-desc">Infrastructure hardening, encrypted transmission, boundary firewalls, and vulnerability management.</td>
               <td class="col-role">Shields IP cameras from botnet attacks, enforces multi-factor authentication, audits access logs, and encrypts video at rest and in transit.</td>
               <td class="col-action">
@@ -1983,7 +2012,7 @@
 
   <script>
     // Master Datasets
-    const aiAnalyticsData = [{"id": 1, "name": "Face Detection", "category": "Detection & Recognition", "icon": "user-check", "one_liner": "Detects and pinpoints the presence and location of human faces in a camera's field of view.", "what_it_does": "Scans real-time video frames using deep-learning models to locate human faces, drawing visual bounding boxes and capturing facial crops regardless of facial angle or lighting.", "distinction": "Face Detection only determines THAT a human face exists and where it is located; it does NOT identify WHO the person is (which is Face Recognition).", "use_case": "Retail customer engagement, framing subjects, visitor snapshot logs, and entry portal monitoring.", "compliance_note": null, "video_id": "0bEGbHb0T4U", "video_title": "AXIS Face Detector - Loss Prevention Demonstration", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=0bEGbHb0T4U", "embed_url": "https://www.youtube-nocookie.com/embed/0bEGbHb0T4U?rel=0", "thumbnail_url": "https://img.youtube.com/vi/0bEGbHb0T4U/hqdefault.jpg"}, {"id": 2, "name": "Face Recognition, where legally authorized", "category": "Detection & Recognition", "icon": "id-card", "one_liner": "Matches detected human faces against an authorized database of known individuals for access control or security alerts.", "what_it_does": "Extracts mathematical biometric feature vectors from facial captures and compares them against pre-enrolled authorized databases to establish identity matches.", "distinction": "Unlike Face Detection (which only locates faces), Face Recognition identifies the specific individual by matching against an enrolled database.", "use_case": "Touchless employee turnstile access, VIP client recognition, and authorized facility security.", "compliance_note": "Deployment is subject to strict legal, privacy, and regulatory compliance (e.g., GDPR, BIPA, statutory privacy laws). Requires explicit legal authority, consent where mandated, and robust data protection.", "video_id": "_epwi9mp8is", "video_title": "How to Set Up Facial Recognition on HikCentral Professional", "video_author": "Hikvision UK & Ireland", "video_url": "https://www.youtube.com/watch?v=_epwi9mp8is", "embed_url": "https://www.youtube-nocookie.com/embed/_epwi9mp8is?rel=0", "thumbnail_url": "https://img.youtube.com/vi/_epwi9mp8is/hqdefault.jpg"}, {"id": 3, "name": "Person Detection", "category": "Detection & Recognition", "icon": "user", "one_liner": "Identifies and isolates human figures in the video frame, distinguishing people from background objects.", "what_it_does": "Analyzes pixel patterns with neural networks trained on human silhouettes to accurately detect standing, walking, and running individuals across challenging scenes.", "distinction": "Focuses on identifying the full human body, whereas Vehicle Detection targets motor vehicles and Face Detection isolates facial close-ups.", "use_case": "Perimeter intrusion alerting, construction site safety monitoring, and after-hours intruder alerts.", "compliance_note": null, "video_id": "eNJyNZDzLIk", "video_title": "Object in Area Scenario: Human Target Detection (AXIS Object Analytics)", "video_author": "Axis Technical Support Videos", "video_url": "https://www.youtube.com/watch?v=eNJyNZDzLIk", "embed_url": "https://www.youtube-nocookie.com/embed/eNJyNZDzLIk?rel=0", "thumbnail_url": "https://img.youtube.com/vi/eNJyNZDzLIk/hqdefault.jpg"}, {"id": 4, "name": "Vehicle Detection", "category": "Detection & Recognition", "icon": "truck", "one_liner": "Identifies motorized vehicles such as cars, trucks, motorcycles, and buses within the camera's view.", "what_it_does": "Recognizes vehicular geometric structures, wheels, and outlines in motion or parked, providing reliable detection across diverse lighting and angles.", "distinction": "Specialized for motor vehicle detection, differentiating motorized transport from pedestrians, animals, or general background motion.", "use_case": "Parking lot occupancy, automated barrier gates, loading bay oversight, and traffic flow monitoring.", "compliance_note": null, "video_id": "hUqbbtxr8e4", "video_title": "AXIS Object Analytics - Edge AI Vehicle & Object Detection", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=hUqbbtxr8e4", "embed_url": "https://www.youtube-nocookie.com/embed/hUqbbtxr8e4?rel=0", "thumbnail_url": "https://img.youtube.com/vi/hUqbbtxr8e4/hqdefault.jpg"}, {"id": 5, "name": "Human/Vehicle Classification", "category": "Detection & Recognition", "icon": "layers", "one_liner": "Differentiates whether a detected moving object is a person or a vehicle, filtering out false alarms caused by animals, weather, and foliage.", "what_it_does": "Classifies moving targets specifically into 'human' or 'vehicle' categories, eliminating false alerts triggered by swaying branches, rain, shadows, or wildlife.", "distinction": "Applies real-time semantic labeling to separate humans and vehicles simultaneously, drastically improving signal-to-noise ratio over raw motion detection.", "use_case": "Outdoor perimeter fences, critical infrastructure borders, and automated surveillance dispatch.", "compliance_note": null, "video_id": "tmpgZZKaT5E", "video_title": "Dahua WizSense AI CCTV Explained: How AI Cameras Classify People & Vehicles", "video_author": "BoardTac Solutions (Dahua AI Systems)", "video_url": "https://www.youtube.com/watch?v=tmpgZZKaT5E", "embed_url": "https://www.youtube-nocookie.com/embed/tmpgZZKaT5E?rel=0", "thumbnail_url": "https://img.youtube.com/vi/tmpgZZKaT5E/hqdefault.jpg"}, {"id": 6, "name": "Line Crossing", "category": "Movement & Zone Analytics", "icon": "git-commit", "one_liner": "Generates an instant alert when a person or vehicle crosses a predefined virtual tripwire line in a specified direction.", "what_it_does": "Monitors user-configured 2D virtual tripwire vectors across entryways, fence lines, or corridors, triggering alarms when a classified target traverses the line.", "distinction": "Monitors boundary passage along a 1D vector line; unlike Intrusion Detection, it does not evaluate dwell time inside an enclosed area.", "use_case": "Property boundary fences, railway platform safety lines, and warehouse loading bay borders.", "compliance_note": null, "video_id": "Gla20ImaJe0", "video_title": "AXIS Object Analytics - Virtual Line Crossing Detection", "video_author": "Axis Communications USA", "video_url": "https://www.youtube.com/watch?v=Gla20ImaJe0", "embed_url": "https://www.youtube-nocookie.com/embed/Gla20ImaJe0?rel=0", "thumbnail_url": "https://img.youtube.com/vi/Gla20ImaJe0/hqdefault.jpg"}, {"id": 7, "name": "Intrusion Detection", "category": "Movement & Zone Analytics", "icon": "alert-triangle", "one_liner": "Triggers an alarm when an unauthorized subject enters and remains inside a designated virtual zone for a set threshold.", "what_it_does": "Enforces security boundaries across multi-point polygonal zones, alerting operators when a person or vehicle enters the zone and stays beyond a configurable dwell time.", "distinction": "Intrusion Detection evaluates entry and dwell time inside a 2D polygonal area, unlike Line Crossing which triggers instantly upon crossing a line.", "use_case": "Securing outdoor storage yards, electrical substation enclosures, and corporate premises after hours.", "compliance_note": null, "video_id": "ij5RFVBtMt0", "video_title": "Configuration & Demonstration: AXIS Motion Guard Intrusion Detection", "video_author": "Axis Technical Support Videos", "video_url": "https://www.youtube.com/watch?v=ij5RFVBtMt0", "embed_url": "https://www.youtube-nocookie.com/embed/ij5RFVBtMt0?rel=0", "thumbnail_url": "https://img.youtube.com/vi/ij5RFVBtMt0/hqdefault.jpg"}, {"id": 8, "name": "Restricted Area Detection", "category": "Movement & Zone Analytics", "icon": "slash", "one_liner": "Immediately alerts the instant any person or vehicle enters a strictly forbidden, high-security zone.", "what_it_does": "Maintains zero-tolerance no-entry zones around hazardous, high-voltage, or classified assets, initiating immediate lockdown alerts without delay.", "distinction": "Restricted Area Detection fires immediately upon the slightest boundary breach (zero dwell time tolerance), unlike Intrusion Detection which often uses configurable dwell buffers.", "use_case": "Airport tarmac runways, pharmaceutical cleanrooms, high-voltage electrical enclosures, and bank vaults.", "compliance_note": null, "video_id": "U7zW_LxNssE", "video_title": "AI Real-Time Alerts for Restricted No-Entry Zone Violations", "video_author": "Daten & Wissen AI Surveillance", "video_url": "https://www.youtube.com/watch?v=U7zW_LxNssE", "embed_url": "https://www.youtube-nocookie.com/embed/U7zW_LxNssE?rel=0", "thumbnail_url": "https://img.youtube.com/vi/U7zW_LxNssE/hqdefault.jpg"}, {"id": 9, "name": "Loitering Detection", "category": "Movement & Zone Analytics", "icon": "clock", "one_liner": "Detects when an individual or vehicle lingers or remains stationary in a defined area longer than the permitted time limit.", "what_it_does": "Tracks spatial dwell timers for targets within sensitive areas, triggering an alert only when someone remains in the zone beyond a specified time (e.g., >60 seconds).", "distinction": "Trigger is based strictly on dwell duration rather than mere entry; subjects passing straight through without lingering will not trigger an alarm.", "use_case": "ATM vestibules, jewelry storefronts, school perimeter perimeters, and unattended transit platforms.", "compliance_note": null, "video_id": "5bWSiwir0lU", "video_title": "Detecting Dwell Time & Loitering Using AXIS Object Analytics", "video_author": "Axis Technical Support Videos", "video_url": "https://www.youtube.com/watch?v=5bWSiwir0lU", "embed_url": "https://www.youtube-nocookie.com/embed/5bWSiwir0lU?rel=0", "thumbnail_url": "https://img.youtube.com/vi/5bWSiwir0lU/hqdefault.jpg"}, {"id": 10, "name": "Crowd Detection", "category": "Crowd & Counting Analytics", "icon": "users", "one_liner": "Identifies when a group of people gathers in a specific area exceeding normal group size or threshold.", "what_it_does": "Analyzes spatial groupings of individuals in real time, alerting control rooms when an abnormal accumulation or sudden gathering of people forms in a monitored zone.", "distinction": "Crowd Detection flags discrete gathering events or sudden group formations, whereas Crowd Density Analysis continuously measures spatial percentage saturation across a floor.", "use_case": "Public plazas, concert venue bottlenecks, hospital emergency lobbies, and protest monitoring.", "compliance_note": null, "video_id": "gZSajFBy3r4", "video_title": "People Gathering & Abnormal Crowd Detection Demo", "video_author": "Hikvision Europe", "video_url": "https://www.youtube.com/watch?v=gZSajFBy3r4", "embed_url": "https://www.youtube-nocookie.com/embed/gZSajFBy3r4?rel=0", "thumbnail_url": "https://img.youtube.com/vi/gZSajFBy3r4/hqdefault.jpg"}, {"id": 11, "name": "Crowd Density Analysis", "category": "Crowd & Counting Analytics", "icon": "grid", "one_liner": "Measures and visualizes the percentage and density of spatial occupancy across an area to prevent dangerous overcrowding.", "what_it_does": "Calculates real-time density heatmaps and occupancy percentages (e.g., persons per square meter) across concourses, warning operators before crowd crushing occurs.", "distinction": "Measures continuous spatial saturation and heat gradients across an entire physical area, unlike Crowd Detection which flags discrete group clusters.", "use_case": "Metro subway platforms, airport concourses, stadium stairwells, and festival entry gates.", "compliance_note": null, "video_id": "RYphFq0-Wso", "video_title": "Visualizing & Managing Occupancy and Crowd Density with Video Analytics", "video_author": "BriefCam Video Analytics", "video_url": "https://www.youtube.com/watch?v=RYphFq0-Wso", "embed_url": "https://www.youtube-nocookie.com/embed/RYphFq0-Wso?rel=0", "thumbnail_url": "https://img.youtube.com/vi/RYphFq0-Wso/hqdefault.jpg"}, {"id": 12, "name": "People Counting", "category": "Crowd & Counting Analytics", "icon": "user-plus", "one_liner": "Continuously counts the number of people entering, exiting, or passing through a defined entrance or passage.", "what_it_does": "Uses overhead or angled AI cameras to track bidirectional foot traffic across threshold lines, compiling accurate In, Out, and Total pedestrian tallies.", "distinction": "People Counting measures continuous traffic flow and cumulative footfall over time, whereas Occupancy Counting maintains the live net head count inside a space.", "use_case": "Retail store visitor conversion rates, public transit passenger volume auditing, and building facility planning.", "compliance_note": null, "video_id": "J8qbMr9-L38", "video_title": "AXIS People Counter - Operational Insight Beyond Footfall", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=J8qbMr9-L38", "embed_url": "https://www.youtube-nocookie.com/embed/J8qbMr9-L38?rel=0", "thumbnail_url": "https://img.youtube.com/vi/J8qbMr9-L38/hqdefault.jpg"}, {"id": 13, "name": "Occupancy Counting", "category": "Crowd & Counting Analytics", "icon": "pie-chart", "one_liner": "Maintains a live, real-time count of total individuals currently inside a building or enclosed space to enforce capacity limits.", "what_it_does": "Dynamically aggregates entries and exits across all doors (Live Count = Total In − Total Out), driving digital signage and triggering alerts when nearing fire safety limits.", "distinction": "Tracks net concurrent occupants present inside an enclosed facility in real time, unlike People Counting which simply records cumulative transit events.", "use_case": "Fire safety code enforcement, supermarket capacity control, corporate cafeteria management, and venue safety.", "compliance_note": null, "video_id": "LnbrwjBYaqk", "video_title": "Real-Time Occupancy Control Solution with AXIS Occupancy Estimator", "video_author": "Axis Communications North Asia", "video_url": "https://www.youtube.com/watch?v=LnbrwjBYaqk", "embed_url": "https://www.youtube-nocookie.com/embed/LnbrwjBYaqk?rel=0", "thumbnail_url": "https://img.youtube.com/vi/LnbrwjBYaqk/hqdefault.jpg"}, {"id": 14, "name": "Direction Detection", "category": "Movement & Zone Analytics", "icon": "compass", "one_liner": "Determines and monitors the travel vector of moving pedestrians or vehicles along designated paths.", "what_it_does": "Calculates speed and heading vectors for moving targets, verifying that motion adheres to permitted traffic patterns or designated pedestrian corridors.", "distinction": "Monitors general motion heading and directional distribution; differs from Wrong-Way Detection which functions specifically as an active violation alarm for illegal reverse travel.", "use_case": "Airport terminal transit corridors, warehouse forklift lanes, and highway traffic flow management.", "compliance_note": null, "video_id": "PSx43EjK0CY", "video_title": "Wisenet X Direction Detection Video Analytics Demonstration", "video_author": "Hanwha Vision Europe", "video_url": "https://www.youtube.com/watch?v=PSx43EjK0CY", "embed_url": "https://www.youtube-nocookie.com/embed/PSx43EjK0CY?rel=0", "thumbnail_url": "https://img.youtube.com/vi/PSx43EjK0CY/hqdefault.jpg"}, {"id": 15, "name": "Wrong-Way Movement Detection", "category": "Movement & Zone Analytics", "icon": "alert-octagon", "one_liner": "Generates an urgent warning when a vehicle or person travels in reverse or against the mandatory flow of traffic.", "what_it_does": "Enforces strict one-way travel rules on ramps, access lanes, and airport security exits, triggering immediate acoustic or strobe alarms upon reverse traversal.", "distinction": "An enforcement alarm designed specifically to prevent hazardous reverse travel in one-way corridors, unlike general Direction Detection which observes multi-directional flows.", "use_case": "Highway exit ramps (wrong-way driver alert), airport one-way security exit gates, and underground parking spirals.", "compliance_note": null, "video_id": "nTOKFhM0Fik", "video_title": "Bosch Security - Video Analytics - Wrong-Way Movement Detection", "video_author": "Keenfinity Group (Bosch Security)", "video_url": "https://www.youtube.com/watch?v=nTOKFhM0Fik", "embed_url": "https://www.youtube-nocookie.com/embed/nTOKFhM0Fik?rel=0", "thumbnail_url": "https://img.youtube.com/vi/nTOKFhM0Fik/hqdefault.jpg"}, {"id": 16, "name": "Abandoned Object Detection", "category": "Object Analytics", "icon": "briefcase", "one_liner": "Flags unattended stationary items, such as bags or boxes, left behind in public areas beyond a set time limit.", "what_it_does": "Detects when an object separates from a human owner and remains stationary in a monitored public space longer than a configured threshold (e.g., 60-120 seconds).", "distinction": "Detects NEW, unapproved stationary objects introduced into a scene; in contrast, Missing Object Detection monitors preexisting registered items that disappear.", "use_case": "Airport departure halls, train stations, mass transit terminals, and critical government infrastructure.", "compliance_note": null, "video_id": "0jKgfpuRY1A", "video_title": "What is IVS? Abandoned Object Feature Demonstration", "video_author": "Security Camera King", "video_url": "https://www.youtube.com/watch?v=0jKgfpuRY1A", "embed_url": "https://www.youtube-nocookie.com/embed/0jKgfpuRY1A?rel=0", "thumbnail_url": "https://img.youtube.com/vi/0jKgfpuRY1A/hqdefault.jpg"}, {"id": 17, "name": "Missing Object Detection", "category": "Object Analytics", "icon": "help-circle", "one_liner": "Alerts security operators immediately when a designated stationary asset or valuable object disappears from its location.", "what_it_does": "Maintains a visual reference profile of a stationary valuable item and raises an alarm when that asset is no longer detected within its defined boundary.", "distinction": "Monitors the absence or disappearance of an existing monitored asset; differs from Object Removal Detection which actively detects someone physically lifting the item.", "use_case": "Museum exhibits, retail high-value electronics display counters, warehouse inventory checkpoints, and emergency equipment stations.", "compliance_note": null, "video_id": "ucgweAnw0fQ", "video_title": "Dahua IVS Missing Object Detection Live Demo", "video_author": "Dahua Technology", "video_url": "https://www.youtube.com/watch?v=ucgweAnw0fQ", "embed_url": "https://www.youtube-nocookie.com/embed/ucgweAnw0fQ?rel=0", "thumbnail_url": "https://img.youtube.com/vi/ucgweAnw0fQ/hqdefault.jpg"}, {"id": 18, "name": "Object Removal Detection", "category": "Object Analytics", "icon": "package", "one_liner": "Detects the deliberate physical act of an individual lifting, taking, or removing a protected item from its resting place.", "what_it_does": "Combines human interaction tracking and object state analysis to trigger an alarm the instant a person picks up, dislodges, or removes a protected item from a shelf or pedestal.", "distinction": "Focuses on the active physical action of theft or lifting in progress, whereas Missing Object Detection alerts on the static state of the item being gone.", "use_case": "Art gallery protection, luxury retail theft prevention, high-value tool cribs, and pharmacy narcotics cabinets.", "compliance_note": null, "video_id": "f-egY7SsZUI", "video_title": "Bosch Security - Video Analytics - Removed Object Detection Demo", "video_author": "Keenfinity Group (Bosch Security)", "video_url": "https://www.youtube.com/watch?v=f-egY7SsZUI", "embed_url": "https://www.youtube-nocookie.com/embed/f-egY7SsZUI?rel=0", "thumbnail_url": "https://img.youtube.com/vi/f-egY7SsZUI/hqdefault.jpg"}, {"id": 19, "name": "Scene Change Detection", "category": "Object Analytics", "icon": "refresh-cw", "one_liner": "Detects sudden significant changes in the camera's visual background caused by physical rotation, repositioning, or environmental shifts.", "what_it_does": "Compares structural scene histograms and key visual landmarks, alerting operators if the camera has been physically twisted, knocked, or redirected away from its target scene.", "distinction": "Flags changes where the viewing angle or perspective shifts, unlike Camera Obstruction (where view is blocked) or Defocus (where view is blurry).", "use_case": "Surveillance system health audits, detecting unauthorized camera realignment, and PTZ preset drift detection.", "compliance_note": null, "video_id": "Oi9DfQTLHMA", "video_title": "What is IVS? Scene Change Detection Feature Demonstration", "video_author": "Security Camera King", "video_url": "https://www.youtube.com/watch?v=Oi9DfQTLHMA", "embed_url": "https://www.youtube-nocookie.com/embed/Oi9DfQTLHMA?rel=0", "thumbnail_url": "https://img.youtube.com/vi/Oi9DfQTLHMA/hqdefault.jpg"}, {"id": 20, "name": "Camera Tampering Detection", "category": "Camera Health", "icon": "shield-alert", "one_liner": "Alarms when an attacker attempts to vandalize or incapacitate a camera via spray painting, laser blinding, sudden redirection, or physical impact.", "what_it_does": "Detects malicious physical interventions including harsh camera strikes, spray paint coating, intentional blinding with high-power lights, and sudden harsh rotation.", "distinction": "An overarching alarm designed to detect malicious human sabotage attempts on the physical camera hardware.", "use_case": "Correctional facilities, public transit stations, bank exterior walls, and high-crime urban areas.", "compliance_note": null, "video_id": "FetFl09y3Qg", "video_title": "Alarm Activation When Detecting Camera Tampering (Perimeter Security)", "video_author": "DAVANTIS Perimeter Security", "video_url": "https://www.youtube.com/watch?v=FetFl09y3Qg", "embed_url": "https://www.youtube-nocookie.com/embed/FetFl09y3Qg?rel=0", "thumbnail_url": "https://img.youtube.com/vi/FetFl09y3Qg/hqdefault.jpg"}, {"id": 21, "name": "Video Loss Detection", "category": "Camera Health", "icon": "video-off", "one_liner": "Alerts security operators instantly when a camera signal drops, disconnects, or experiences complete transmission failure.", "what_it_does": "Monitors stream continuity and video decoder signals at the VMS or NVR level, sounding an immediate alert if the video feed drops due to cable disconnection, power loss, or network failure.", "distinction": "Alerts on the total absence or death of the incoming video stream, whereas Tampering, Defocus, and Obstruction occur while the video signal is still streaming.", "use_case": "Security Operations Centers (SOC), enterprise VMS health monitoring, and regulatory uptime auditing.", "compliance_note": null, "video_id": "sjGR-y-zm4Y", "video_title": "Automated PTZ Tour & Alarm Linkage Triggered on Video Loss", "video_author": "DAHUA TECHNOLOGY INDIA", "video_url": "https://www.youtube.com/watch?v=sjGR-y-zm4Y", "embed_url": "https://www.youtube-nocookie.com/embed/sjGR-y-zm4Y?rel=0", "thumbnail_url": "https://img.youtube.com/vi/sjGR-y-zm4Y/hqdefault.jpg"}, {"id": 22, "name": "Defocus Detection", "category": "Camera Health", "icon": "eye-off", "one_liner": "Identifies when a camera's optical focus degrades or blurs, warning operators that image quality has been compromised.", "what_it_does": "Monitors high-frequency image edge sharpness across the visual field and fires a maintenance alert when edge sharpness falls below critical recognition thresholds.", "distinction": "Detects optical blurring and softness; the scene is still visible and illuminated, but out of focus, unlike Obstruction which blocks the visual field.", "use_case": "Automated maintenance ticketing, ANPR/LPR camera quality assurance, and long-range perimeter optical verification.", "compliance_note": null, "video_id": "fjKLwHxnPHU", "video_title": "How to Set Up Defocus Detection on Hanwha Vision AI Cameras", "video_author": "Hanwha Vision America", "video_url": "https://www.youtube.com/watch?v=fjKLwHxnPHU", "embed_url": "https://www.youtube-nocookie.com/embed/fjKLwHxnPHU?rel=0", "thumbnail_url": "https://img.youtube.com/vi/fjKLwHxnPHU/hqdefault.jpg"}, {"id": 23, "name": "Camera Obstruction Detection", "category": "Camera Health", "icon": "eye", "one_liner": "Detects when a camera's lens is covered, blocked, or obscured by foreign objects, bags, tape, or overgrown foliage.", "what_it_does": "Analyzes sudden loss of visual variation and persistent low-contrast uniform frames to detect foreign physical objects placed directly over or in front of the lens.", "distinction": "Detects physical blocking or masking directly over the front of the lens, whereas Tampering covers physical strikes/vandalism and Defocus covers optical blur.", "use_case": "Parking garages, building stairwells, ATM security cameras, and outdoor cameras prone to vegetation overgrowth.", "compliance_note": null, "video_id": "POnW3LvPG1c", "video_title": "CCTV Camera Tampering & Lens Obstruction Alert Demo", "video_author": "AI-Bot Eye Systems", "video_url": "https://www.youtube.com/watch?v=POnW3LvPG1c", "embed_url": "https://www.youtube-nocookie.com/embed/POnW3LvPG1c?rel=0", "thumbnail_url": "https://img.youtube.com/vi/POnW3LvPG1c/hqdefault.jpg"}, {"id": 24, "name": "Perimeter Protection", "category": "Movement & Zone Analytics", "icon": "shield", "one_liner": "Establishes automated multi-layered virtual boundary security around property borders while filtering out environmental noise.", "what_it_does": "Integrates deep-learning human/vehicle classification with multi-rule tripwires and boundary zones along outer property borders, delivering 24/7 boundary security with near-zero false alarms.", "distinction": "A comprehensive enterprise perimeter solution combining classified targets, directional rules, and boundary fences rather than a single basic line crossing rule.", "use_case": "Solar energy farms, electrical substations, industrial manufacturing plants, military installations, and critical infrastructure.", "compliance_note": null, "video_id": "goOfXwgqG3Y", "video_title": "AXIS Perimeter Defender PTZ Autotracking Demonstration", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=goOfXwgqG3Y", "embed_url": "https://www.youtube-nocookie.com/embed/goOfXwgqG3Y?rel=0", "thumbnail_url": "https://img.youtube.com/vi/goOfXwgqG3Y/hqdefault.jpg"}, {"id": 25, "name": "Fall Detection, where applicable", "category": "Safety Analytics", "icon": "activity", "one_liner": "Recognizes sudden changes in human posture indicative of a person collapsing or falling down, enabling immediate emergency assistance.", "what_it_does": "Tracks human skeletal pose keypoints and downward velocity vectors in real time, differentiating accidental falls from deliberate sitting or lying down, and raising emergency alarms.", "distinction": "Monitors rapid vertical body collapse and subsequent lack of motion on the floor, unlike loitering or intrusion which monitor horizontal zone presence.", "compliance_note": "Deployed in healthcare, assisted living, and lone-worker environments; subject to healthcare privacy guidelines and operational applicability.", "use_case": "Elderly assisted living facilities, hospital patient rooms, industrial lone-worker zones, and warehouse high-bay racking aisles.", "video_id": "18aTYzvL9DA", "video_title": "Slip & Fall Detection AI Camera Demonstration", "video_author": "Hanwha Vision Europe", "video_url": "https://www.youtube.com/watch?v=18aTYzvL9DA", "embed_url": "https://www.youtube-nocookie.com/embed/18aTYzvL9DA?rel=0", "thumbnail_url": "https://img.youtube.com/vi/18aTYzvL9DA/hqdefault.jpg"}, {"id": 26, "name": "Fire/Smoke Detection, where supported", "category": "Safety Analytics", "icon": "flame", "one_liner": "Visually detects open flames and developing smoke plumes significantly faster than traditional spot detectors, especially in high-ceiling spaces.", "what_it_does": "Processes optical and thermal video streams using deep learning models that analyze flame flicker frequencies, spectral color distributions, and expanding smoke plume dynamics.", "distinction": "Detects fire and smoke optically at the source within seconds, unlike traditional smoke/heat sensors that require smoke to physically travel up to a ceiling sensor.", "compliance_note": "Serves as an early optical warning system where supported; intended to supplement rather than replace mandatory certified life-safety fire alarm systems.", "use_case": "Aircraft hangars, high-ceiling logistics warehouses, timber mills, waste recycling plants, and petrochemical refineries.", "video_id": "QWQctTGYbjE", "video_title": "Hikvision Thermal Optical Camera for Rapid Early Fire Detection", "video_author": "Hikvision Corporate Channel", "video_url": "https://www.youtube.com/watch?v=QWQctTGYbjE", "embed_url": "https://www.youtube-nocookie.com/embed/QWQctTGYbjE?rel=0", "thumbnail_url": "https://img.youtube.com/vi/QWQctTGYbjE/hqdefault.jpg"}, {"id": 27, "name": "Vehicle/person tracking", "category": "Tracking & Behaviour", "icon": "crosshair", "one_liner": "Continuously follows and plots the real-time path of an individual or vehicle across camera fields of view or via motorized PTZ tracking.", "what_it_does": "Assigns and maintains persistent object IDs across sequential frames, automatically steering motorized PTZ cameras to keep targets centered and mapping suspect trajectories across cameras.", "distinction": "Unlike Person/Vehicle Detection (which identifies objects at an isolated instant), Tracking maintains persistent identity, trajectory, and spatial coordinates over time.", "use_case": "Automated PTZ tracking of perimeter intruders, forensic suspect journey reconstruction, and airport apron ground vehicle tracking.", "compliance_note": null, "video_id": "2HVDI0Lr5EA", "video_title": "How to Configure Smart Tracking on PTZ (Human & Vehicle Auto-Tracking)", "video_author": "HIKVISION MEA", "video_url": "https://www.youtube.com/watch?v=2HVDI0Lr5EA", "embed_url": "https://www.youtube-nocookie.com/embed/2HVDI0Lr5EA?rel=0", "thumbnail_url": "https://img.youtube.com/vi/2HVDI0Lr5EA/hqdefault.jpg"}, {"id": 28, "name": "Behaviour/event-based analytics where legally and technically appropriate", "category": "Tracking & Behaviour", "icon": "zap", "one_liner": "Detects complex human actions and anomalous security incidents, such as fighting, running, distress gestures, or erratic movements.", "what_it_does": "Applies spatio-temporal deep-learning networks to recognize predefined anomalous human behaviors, such as physical fighting, aggressive shoving, running in secured areas, or distress waving.", "distinction": "Analyzes dynamic human interactions and complex bodily behaviors over time, moving beyond simple presence or object classification into intent and event understanding.", "compliance_note": "Deployed where legally and technically appropriate; requires rigorous operational safeguards, algorithmic governance, and privacy compliance.", "use_case": "Correctional facilities, public transit platforms, school corridors, entertainment venues, and bank branches.", "video_id": "HTKbnzz4Ty4", "video_title": "Milesight AI Violence & Abnormal Behavior Detection Demo", "video_author": "Milesight Security", "video_url": "https://www.youtube.com/watch?v=HTKbnzz4Ty4", "embed_url": "https://www.youtube-nocookie.com/embed/HTKbnzz4Ty4?rel=0", "thumbnail_url": "https://img.youtube.com/vi/HTKbnzz4Ty4/hqdefault.jpg"}];
+    const aiAnalyticsData = [{"id": 1, "name": "Face Detection", "category": "Detection & Recognition", "icon": "user-check", "one_liner": "Detects and pinpoints the presence and location of human faces in a camera's field of view.", "what_it_does": "Scans real-time video frames using deep-learning models to locate human faces, drawing visual bounding boxes and capturing facial crops regardless of facial angle or lighting.", "distinction": "Face Detection only determines THAT a human face exists and where it is located; it does NOT identify WHO the person is (which is Face Recognition).", "use_case": "Retail customer engagement, framing subjects, visitor snapshot logs, and entry portal monitoring.", "compliance_note": null, "video_id": "0bEGbHb0T4U", "video_title": "AXIS Face Detector - Loss Prevention Demonstration", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=0bEGbHb0T4U", "embed_url": "https://www.youtube-nocookie.com/embed/0bEGbHb0T4U?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/0bEGbHb0T4U/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 2, "name": "Face Recognition, where legally authorized", "category": "Detection & Recognition", "icon": "id-card", "one_liner": "Matches detected human faces against an authorized database of known individuals for access control or security alerts.", "what_it_does": "Extracts mathematical biometric feature vectors from facial captures and compares them against pre-enrolled authorized databases to establish identity matches.", "distinction": "Unlike Face Detection (which only locates faces), Face Recognition identifies the specific individual by matching against an enrolled database.", "use_case": "Touchless employee turnstile access, VIP client recognition, and authorized facility security.", "compliance_note": "Deployment is subject to strict legal, privacy, and regulatory compliance (e.g., GDPR, BIPA, statutory privacy laws). Requires explicit legal authority, consent where mandated, and robust data protection.", "video_id": "_epwi9mp8is", "video_title": "How to Set Up Facial Recognition on HikCentral Professional", "video_author": "Hikvision UK & Ireland", "video_url": "https://www.youtube.com/watch?v=_epwi9mp8is", "embed_url": "https://www.youtube-nocookie.com/embed/_epwi9mp8is?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/_epwi9mp8is/hqdefault.jpg", "thumbnail_variant": "hqdefault.jpg"}, {"id": 3, "name": "Person Detection", "category": "Detection & Recognition", "icon": "user", "one_liner": "Identifies and isolates human figures in the video frame, distinguishing people from background objects.", "what_it_does": "Analyzes pixel patterns with neural networks trained on human silhouettes to accurately detect standing, walking, and running individuals across challenging scenes.", "distinction": "Focuses on identifying the full human body, whereas Vehicle Detection targets motor vehicles and Face Detection isolates facial close-ups.", "use_case": "Perimeter intrusion alerting, construction site safety monitoring, and after-hours intruder alerts.", "compliance_note": null, "video_id": "eNJyNZDzLIk", "video_title": "Object in Area Scenario: Human Target Detection (AXIS Object Analytics)", "video_author": "Axis Technical Support Videos", "video_url": "https://www.youtube.com/watch?v=eNJyNZDzLIk", "embed_url": "https://www.youtube-nocookie.com/embed/eNJyNZDzLIk?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/eNJyNZDzLIk/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 4, "name": "Vehicle Detection", "category": "Detection & Recognition", "icon": "truck", "one_liner": "Identifies motorized vehicles such as cars, trucks, motorcycles, and buses within the camera's view.", "what_it_does": "Recognizes vehicular geometric structures, wheels, and outlines in motion or parked, providing reliable detection across diverse lighting and angles.", "distinction": "Specialized for motor vehicle detection, differentiating motorized transport from pedestrians, animals, or general background motion.", "use_case": "Parking lot occupancy, automated barrier gates, loading bay oversight, and traffic flow monitoring.", "compliance_note": null, "video_id": "hUqbbtxr8e4", "video_title": "AXIS Object Analytics - Edge AI Vehicle & Object Detection", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=hUqbbtxr8e4", "embed_url": "https://www.youtube-nocookie.com/embed/hUqbbtxr8e4?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/hUqbbtxr8e4/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 5, "name": "Human/Vehicle Classification", "category": "Detection & Recognition", "icon": "layers", "one_liner": "Differentiates whether a detected moving object is a person or a vehicle, filtering out false alarms caused by animals, weather, and foliage.", "what_it_does": "Classifies moving targets specifically into 'human' or 'vehicle' categories, eliminating false alerts triggered by swaying branches, rain, shadows, or wildlife.", "distinction": "Applies real-time semantic labeling to separate humans and vehicles simultaneously, drastically improving signal-to-noise ratio over raw motion detection.", "use_case": "Outdoor perimeter fences, critical infrastructure borders, and automated surveillance dispatch.", "compliance_note": null, "video_id": "tmpgZZKaT5E", "video_title": "Dahua WizSense AI CCTV Explained: How AI Cameras Classify People & Vehicles", "video_author": "BoardTac Solutions (Dahua AI Systems)", "video_url": "https://www.youtube.com/watch?v=tmpgZZKaT5E", "embed_url": "https://www.youtube-nocookie.com/embed/tmpgZZKaT5E?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/tmpgZZKaT5E/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 6, "name": "Line Crossing", "category": "Movement & Zone Analytics", "icon": "git-commit", "one_liner": "Generates an instant alert when a person or vehicle crosses a predefined virtual tripwire line in a specified direction.", "what_it_does": "Monitors user-configured 2D virtual tripwire vectors across entryways, fence lines, or corridors, triggering alarms when a classified target traverses the line.", "distinction": "Monitors boundary passage along a 1D vector line; unlike Intrusion Detection, it does not evaluate dwell time inside an enclosed area.", "use_case": "Property boundary fences, railway platform safety lines, and warehouse loading bay borders.", "compliance_note": null, "video_id": "Gla20ImaJe0", "video_title": "AXIS Object Analytics - Virtual Line Crossing Detection", "video_author": "Axis Communications USA", "video_url": "https://www.youtube.com/watch?v=Gla20ImaJe0", "embed_url": "https://www.youtube-nocookie.com/embed/Gla20ImaJe0?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/Gla20ImaJe0/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 7, "name": "Intrusion Detection", "category": "Movement & Zone Analytics", "icon": "alert-triangle", "one_liner": "Triggers an alarm when an unauthorized subject enters and remains inside a designated virtual zone for a set threshold.", "what_it_does": "Enforces security boundaries across multi-point polygonal zones, alerting operators when a person or vehicle enters the zone and stays beyond a configurable dwell time.", "distinction": "Intrusion Detection evaluates entry and dwell time inside a 2D polygonal area, unlike Line Crossing which triggers instantly upon crossing a line.", "use_case": "Securing outdoor storage yards, electrical substation enclosures, and corporate premises after hours.", "compliance_note": null, "video_id": "ij5RFVBtMt0", "video_title": "Configuration & Demonstration: AXIS Motion Guard Intrusion Detection", "video_author": "Axis Technical Support Videos", "video_url": "https://www.youtube.com/watch?v=ij5RFVBtMt0", "embed_url": "https://www.youtube-nocookie.com/embed/ij5RFVBtMt0?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/ij5RFVBtMt0/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 8, "name": "Restricted Area Detection", "category": "Movement & Zone Analytics", "icon": "slash", "one_liner": "Immediately alerts the instant any person or vehicle enters a strictly forbidden, high-security zone.", "what_it_does": "Maintains zero-tolerance no-entry zones around hazardous, high-voltage, or classified assets, initiating immediate lockdown alerts without delay.", "distinction": "Restricted Area Detection fires immediately upon the slightest boundary breach (zero dwell time tolerance), unlike Intrusion Detection which often uses configurable dwell buffers.", "use_case": "Airport tarmac runways, pharmaceutical cleanrooms, high-voltage electrical enclosures, and bank vaults.", "compliance_note": null, "video_id": "U7zW_LxNssE", "video_title": "AI Real-Time Alerts for Restricted No-Entry Zone Violations", "video_author": "Daten & Wissen AI Surveillance", "video_url": "https://www.youtube.com/watch?v=U7zW_LxNssE", "embed_url": "https://www.youtube-nocookie.com/embed/U7zW_LxNssE?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/U7zW_LxNssE/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 9, "name": "Loitering Detection", "category": "Movement & Zone Analytics", "icon": "clock", "one_liner": "Detects when an individual or vehicle lingers or remains stationary in a defined area longer than the permitted time limit.", "what_it_does": "Tracks spatial dwell timers for targets within sensitive areas, triggering an alert only when someone remains in the zone beyond a specified time (e.g., >60 seconds).", "distinction": "Trigger is based strictly on dwell duration rather than mere entry; subjects passing straight through without lingering will not trigger an alarm.", "use_case": "ATM vestibules, jewelry storefronts, school perimeter perimeters, and unattended transit platforms.", "compliance_note": null, "video_id": "5bWSiwir0lU", "video_title": "Detecting Dwell Time & Loitering Using AXIS Object Analytics", "video_author": "Axis Technical Support Videos", "video_url": "https://www.youtube.com/watch?v=5bWSiwir0lU", "embed_url": "https://www.youtube-nocookie.com/embed/5bWSiwir0lU?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/5bWSiwir0lU/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 10, "name": "Crowd Detection", "category": "Crowd & Counting Analytics", "icon": "users", "one_liner": "Identifies when a group of people gathers in a specific area exceeding normal group size or threshold.", "what_it_does": "Analyzes spatial groupings of individuals in real time, alerting control rooms when an abnormal accumulation or sudden gathering of people forms in a monitored zone.", "distinction": "Crowd Detection flags discrete gathering events or sudden group formations, whereas Crowd Density Analysis continuously measures spatial percentage saturation across a floor.", "use_case": "Public plazas, concert venue bottlenecks, hospital emergency lobbies, and protest monitoring.", "compliance_note": null, "video_id": "gZSajFBy3r4", "video_title": "People Gathering & Abnormal Crowd Detection Demo", "video_author": "Hikvision Europe", "video_url": "https://www.youtube.com/watch?v=gZSajFBy3r4", "embed_url": "https://www.youtube-nocookie.com/embed/gZSajFBy3r4?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/gZSajFBy3r4/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 11, "name": "Crowd Density Analysis", "category": "Crowd & Counting Analytics", "icon": "grid", "one_liner": "Measures and visualizes the percentage and density of spatial occupancy across an area to prevent dangerous overcrowding.", "what_it_does": "Calculates real-time density heatmaps and occupancy percentages (e.g., persons per square meter) across concourses, warning operators before crowd crushing occurs.", "distinction": "Measures continuous spatial saturation and heat gradients across an entire physical area, unlike Crowd Detection which flags discrete group clusters.", "use_case": "Metro subway platforms, airport concourses, stadium stairwells, and festival entry gates.", "compliance_note": null, "video_id": "RYphFq0-Wso", "video_title": "Visualizing & Managing Occupancy and Crowd Density with Video Analytics", "video_author": "BriefCam Video Analytics", "video_url": "https://www.youtube.com/watch?v=RYphFq0-Wso", "embed_url": "https://www.youtube-nocookie.com/embed/RYphFq0-Wso?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/RYphFq0-Wso/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 12, "name": "People Counting", "category": "Crowd & Counting Analytics", "icon": "user-plus", "one_liner": "Continuously counts the number of people entering, exiting, or passing through a defined entrance or passage.", "what_it_does": "Uses overhead or angled AI cameras to track bidirectional foot traffic across threshold lines, compiling accurate In, Out, and Total pedestrian tallies.", "distinction": "People Counting measures continuous traffic flow and cumulative footfall over time, whereas Occupancy Counting maintains the live net head count inside a space.", "use_case": "Retail store visitor conversion rates, public transit passenger volume auditing, and building facility planning.", "compliance_note": null, "video_id": "J8qbMr9-L38", "video_title": "AXIS People Counter - Operational Insight Beyond Footfall", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=J8qbMr9-L38", "embed_url": "https://www.youtube-nocookie.com/embed/J8qbMr9-L38?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/J8qbMr9-L38/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 13, "name": "Occupancy Counting", "category": "Crowd & Counting Analytics", "icon": "pie-chart", "one_liner": "Maintains a live, real-time count of total individuals currently inside a building or enclosed space to enforce capacity limits.", "what_it_does": "Dynamically aggregates entries and exits across all doors (Live Count = Total In − Total Out), driving digital signage and triggering alerts when nearing fire safety limits.", "distinction": "Tracks net concurrent occupants present inside an enclosed facility in real time, unlike People Counting which simply records cumulative transit events.", "use_case": "Fire safety code enforcement, supermarket capacity control, corporate cafeteria management, and venue safety.", "compliance_note": null, "video_id": "LnbrwjBYaqk", "video_title": "Real-Time Occupancy Control Solution with AXIS Occupancy Estimator", "video_author": "Axis Communications North Asia", "video_url": "https://www.youtube.com/watch?v=LnbrwjBYaqk", "embed_url": "https://www.youtube-nocookie.com/embed/LnbrwjBYaqk?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/LnbrwjBYaqk/sddefault.jpg", "thumbnail_variant": "sddefault.jpg"}, {"id": 14, "name": "Direction Detection", "category": "Movement & Zone Analytics", "icon": "compass", "one_liner": "Determines and monitors the travel vector of moving pedestrians or vehicles along designated paths.", "what_it_does": "Calculates speed and heading vectors for moving targets, verifying that motion adheres to permitted traffic patterns or designated pedestrian corridors.", "distinction": "Monitors general motion heading and directional distribution; differs from Wrong-Way Detection which functions specifically as an active violation alarm for illegal reverse travel.", "use_case": "Airport terminal transit corridors, warehouse forklift lanes, and highway traffic flow management.", "compliance_note": null, "video_id": "PSx43EjK0CY", "video_title": "Wisenet X Direction Detection Video Analytics Demonstration", "video_author": "Hanwha Vision Europe", "video_url": "https://www.youtube.com/watch?v=PSx43EjK0CY", "embed_url": "https://www.youtube-nocookie.com/embed/PSx43EjK0CY?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/PSx43EjK0CY/sddefault.jpg", "thumbnail_variant": "sddefault.jpg"}, {"id": 15, "name": "Wrong-Way Movement Detection", "category": "Movement & Zone Analytics", "icon": "alert-octagon", "one_liner": "Generates an urgent warning when a vehicle or person travels in reverse or against the mandatory flow of traffic.", "what_it_does": "Enforces strict one-way travel rules on ramps, access lanes, and airport security exits, triggering immediate acoustic or strobe alarms upon reverse traversal.", "distinction": "An enforcement alarm designed specifically to prevent hazardous reverse travel in one-way corridors, unlike general Direction Detection which observes multi-directional flows.", "use_case": "Highway exit ramps (wrong-way driver alert), airport one-way security exit gates, and underground parking spirals.", "compliance_note": null, "video_id": "nTOKFhM0Fik", "video_title": "Bosch Security - Video Analytics - Wrong-Way Movement Detection", "video_author": "Keenfinity Group (Bosch Security)", "video_url": "https://www.youtube.com/watch?v=nTOKFhM0Fik", "embed_url": "https://www.youtube-nocookie.com/embed/nTOKFhM0Fik?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/nTOKFhM0Fik/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 16, "name": "Abandoned Object Detection", "category": "Object Analytics", "icon": "briefcase", "one_liner": "Flags unattended stationary items, such as bags or boxes, left behind in public areas beyond a set time limit.", "what_it_does": "Detects when an object separates from a human owner and remains stationary in a monitored public space longer than a configured threshold (e.g., 60-120 seconds).", "distinction": "Detects NEW, unapproved stationary objects introduced into a scene; in contrast, Missing Object Detection monitors preexisting registered items that disappear.", "use_case": "Airport departure halls, train stations, mass transit terminals, and critical government infrastructure.", "compliance_note": null, "video_id": "0jKgfpuRY1A", "video_title": "What is IVS? Abandoned Object Feature Demonstration", "video_author": "Security Camera King", "video_url": "https://www.youtube.com/watch?v=0jKgfpuRY1A", "embed_url": "https://www.youtube-nocookie.com/embed/0jKgfpuRY1A?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/0jKgfpuRY1A/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 17, "name": "Missing Object Detection", "category": "Object Analytics", "icon": "help-circle", "one_liner": "Alerts security operators immediately when a designated stationary asset or valuable object disappears from its location.", "what_it_does": "Maintains a visual reference profile of a stationary valuable item and raises an alarm when that asset is no longer detected within its defined boundary.", "distinction": "Monitors the absence or disappearance of an existing monitored asset; differs from Object Removal Detection which actively detects someone physically lifting the item.", "use_case": "Museum exhibits, retail high-value electronics display counters, warehouse inventory checkpoints, and emergency equipment stations.", "compliance_note": null, "video_id": "ucgweAnw0fQ", "video_title": "Dahua IVS Missing Object Detection Live Demo", "video_author": "Dahua Technology", "video_url": "https://www.youtube.com/watch?v=ucgweAnw0fQ", "embed_url": "https://www.youtube-nocookie.com/embed/ucgweAnw0fQ?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/ucgweAnw0fQ/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 18, "name": "Object Removal Detection", "category": "Object Analytics", "icon": "package", "one_liner": "Detects the deliberate physical act of an individual lifting, taking, or removing a protected item from its resting place.", "what_it_does": "Combines human interaction tracking and object state analysis to trigger an alarm the instant a person picks up, dislodges, or removes a protected item from a shelf or pedestal.", "distinction": "Focuses on the active physical action of theft or lifting in progress, whereas Missing Object Detection alerts on the static state of the item being gone.", "use_case": "Art gallery protection, luxury retail theft prevention, high-value tool cribs, and pharmacy narcotics cabinets.", "compliance_note": null, "video_id": "f-egY7SsZUI", "video_title": "Bosch Security - Video Analytics - Removed Object Detection Demo", "video_author": "Keenfinity Group (Bosch Security)", "video_url": "https://www.youtube.com/watch?v=f-egY7SsZUI", "embed_url": "https://www.youtube-nocookie.com/embed/f-egY7SsZUI?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/f-egY7SsZUI/sddefault.jpg", "thumbnail_variant": "sddefault.jpg"}, {"id": 19, "name": "Scene Change Detection", "category": "Object Analytics", "icon": "refresh-cw", "one_liner": "Detects sudden significant changes in the camera's visual background caused by physical rotation, repositioning, or environmental shifts.", "what_it_does": "Compares structural scene histograms and key visual landmarks, alerting operators if the camera has been physically twisted, knocked, or redirected away from its target scene.", "distinction": "Flags changes where the viewing angle or perspective shifts, unlike Camera Obstruction (where view is blocked) or Defocus (where view is blurry).", "use_case": "Surveillance system health audits, detecting unauthorized camera realignment, and PTZ preset drift detection.", "compliance_note": null, "video_id": "Oi9DfQTLHMA", "video_title": "What is IVS? Scene Change Detection Feature Demonstration", "video_author": "Security Camera King", "video_url": "https://www.youtube.com/watch?v=Oi9DfQTLHMA", "embed_url": "https://www.youtube-nocookie.com/embed/Oi9DfQTLHMA?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/Oi9DfQTLHMA/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 20, "name": "Camera Tampering Detection", "category": "Camera Health", "icon": "shield-alert", "one_liner": "Alarms when an attacker attempts to vandalize or incapacitate a camera via spray painting, laser blinding, sudden redirection, or physical impact.", "what_it_does": "Detects malicious physical interventions including harsh camera strikes, spray paint coating, intentional blinding with high-power lights, and sudden harsh rotation.", "distinction": "An overarching alarm designed to detect malicious human sabotage attempts on the physical camera hardware.", "use_case": "Correctional facilities, public transit stations, bank exterior walls, and high-crime urban areas.", "compliance_note": null, "video_id": "FetFl09y3Qg", "video_title": "Alarm Activation When Detecting Camera Tampering (Perimeter Security)", "video_author": "DAVANTIS Perimeter Security", "video_url": "https://www.youtube.com/watch?v=FetFl09y3Qg", "embed_url": "https://www.youtube-nocookie.com/embed/FetFl09y3Qg?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/FetFl09y3Qg/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 21, "name": "Video Loss Detection", "category": "Camera Health", "icon": "video-off", "one_liner": "Alerts security operators instantly when a camera signal drops, disconnects, or experiences complete transmission failure.", "what_it_does": "Monitors stream continuity and video decoder signals at the VMS or NVR level, sounding an immediate alert if the video feed drops due to cable disconnection, power loss, or network failure.", "distinction": "Alerts on the total absence or death of the incoming video stream, whereas Tampering, Defocus, and Obstruction occur while the video signal is still streaming.", "use_case": "Security Operations Centers (SOC), enterprise VMS health monitoring, and regulatory uptime auditing.", "compliance_note": null, "video_id": "sjGR-y-zm4Y", "video_title": "Automated PTZ Tour & Alarm Linkage Triggered on Video Loss", "video_author": "DAHUA TECHNOLOGY INDIA", "video_url": "https://www.youtube.com/watch?v=sjGR-y-zm4Y", "embed_url": "https://www.youtube-nocookie.com/embed/sjGR-y-zm4Y?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/sjGR-y-zm4Y/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 22, "name": "Defocus Detection", "category": "Camera Health", "icon": "eye-off", "one_liner": "Identifies when a camera's optical focus degrades or blurs, warning operators that image quality has been compromised.", "what_it_does": "Monitors high-frequency image edge sharpness across the visual field and fires a maintenance alert when edge sharpness falls below critical recognition thresholds.", "distinction": "Detects optical blurring and softness; the scene is still visible and illuminated, but out of focus, unlike Obstruction which blocks the visual field.", "use_case": "Automated maintenance ticketing, ANPR/LPR camera quality assurance, and long-range perimeter optical verification.", "compliance_note": null, "video_id": "fjKLwHxnPHU", "video_title": "How to Set Up Defocus Detection on Hanwha Vision AI Cameras", "video_author": "Hanwha Vision America", "video_url": "https://www.youtube.com/watch?v=fjKLwHxnPHU", "embed_url": "https://www.youtube-nocookie.com/embed/fjKLwHxnPHU?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/fjKLwHxnPHU/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 23, "name": "Camera Obstruction Detection", "category": "Camera Health", "icon": "eye", "one_liner": "Detects when a camera's lens is covered, blocked, or obscured by foreign objects, bags, tape, or overgrown foliage.", "what_it_does": "Analyzes sudden loss of visual variation and persistent low-contrast uniform frames to detect foreign physical objects placed directly over or in front of the lens.", "distinction": "Detects physical blocking or masking directly over the front of the lens, whereas Tampering covers physical strikes/vandalism and Defocus covers optical blur.", "use_case": "Parking garages, building stairwells, ATM security cameras, and outdoor cameras prone to vegetation overgrowth.", "compliance_note": null, "video_id": "POnW3LvPG1c", "video_title": "CCTV Camera Tampering & Lens Obstruction Alert Demo", "video_author": "AI-Bot Eye Systems", "video_url": "https://www.youtube.com/watch?v=POnW3LvPG1c", "embed_url": "https://www.youtube-nocookie.com/embed/POnW3LvPG1c?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/POnW3LvPG1c/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 24, "name": "Perimeter Protection", "category": "Movement & Zone Analytics", "icon": "shield", "one_liner": "Establishes automated multi-layered virtual boundary security around property borders while filtering out environmental noise.", "what_it_does": "Integrates deep-learning human/vehicle classification with multi-rule tripwires and boundary zones along outer property borders, delivering 24/7 boundary security with near-zero false alarms.", "distinction": "A comprehensive enterprise perimeter solution combining classified targets, directional rules, and boundary fences rather than a single basic line crossing rule.", "use_case": "Solar energy farms, electrical substations, industrial manufacturing plants, military installations, and critical infrastructure.", "compliance_note": null, "video_id": "goOfXwgqG3Y", "video_title": "AXIS Perimeter Defender PTZ Autotracking Demonstration", "video_author": "Axis Communications", "video_url": "https://www.youtube.com/watch?v=goOfXwgqG3Y", "embed_url": "https://www.youtube-nocookie.com/embed/goOfXwgqG3Y?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/goOfXwgqG3Y/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 25, "name": "Fall Detection, where applicable", "category": "Safety Analytics", "icon": "activity", "one_liner": "Recognizes sudden changes in human posture indicative of a person collapsing or falling down, enabling immediate emergency assistance.", "what_it_does": "Tracks human skeletal pose keypoints and downward velocity vectors in real time, differentiating accidental falls from deliberate sitting or lying down, and raising emergency alarms.", "distinction": "Monitors rapid vertical body collapse and subsequent lack of motion on the floor, unlike loitering or intrusion which monitor horizontal zone presence.", "compliance_note": "Deployed in healthcare, assisted living, and lone-worker environments; subject to healthcare privacy guidelines and operational applicability.", "use_case": "Elderly assisted living facilities, hospital patient rooms, industrial lone-worker zones, and warehouse high-bay racking aisles.", "video_id": "18aTYzvL9DA", "video_title": "Slip & Fall Detection AI Camera Demonstration", "video_author": "Hanwha Vision Europe", "video_url": "https://www.youtube.com/watch?v=18aTYzvL9DA", "embed_url": "https://www.youtube-nocookie.com/embed/18aTYzvL9DA?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/18aTYzvL9DA/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 26, "name": "Fire/Smoke Detection, where supported", "category": "Safety Analytics", "icon": "flame", "one_liner": "Visually detects open flames and developing smoke plumes significantly faster than traditional spot detectors, especially in high-ceiling spaces.", "what_it_does": "Processes optical and thermal video streams using deep learning models that analyze flame flicker frequencies, spectral color distributions, and expanding smoke plume dynamics.", "distinction": "Detects fire and smoke optically at the source within seconds, unlike traditional smoke/heat sensors that require smoke to physically travel up to a ceiling sensor.", "compliance_note": "Serves as an early optical warning system where supported; intended to supplement rather than replace mandatory certified life-safety fire alarm systems.", "use_case": "Aircraft hangars, high-ceiling logistics warehouses, timber mills, waste recycling plants, and petrochemical refineries.", "video_id": "QWQctTGYbjE", "video_title": "Hikvision Thermal Optical Camera for Rapid Early Fire Detection", "video_author": "Hikvision Corporate Channel", "video_url": "https://www.youtube.com/watch?v=QWQctTGYbjE", "embed_url": "https://www.youtube-nocookie.com/embed/QWQctTGYbjE?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/QWQctTGYbjE/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 27, "name": "Vehicle/person tracking", "category": "Tracking & Behaviour", "icon": "crosshair", "one_liner": "Continuously follows and plots the real-time path of an individual or vehicle across camera fields of view or via motorized PTZ tracking.", "what_it_does": "Assigns and maintains persistent object IDs across sequential frames, automatically steering motorized PTZ cameras to keep targets centered and mapping suspect trajectories across cameras.", "distinction": "Unlike Person/Vehicle Detection (which identifies objects at an isolated instant), Tracking maintains persistent identity, trajectory, and spatial coordinates over time.", "use_case": "Automated PTZ tracking of perimeter intruders, forensic suspect journey reconstruction, and airport apron ground vehicle tracking.", "compliance_note": null, "video_id": "2HVDI0Lr5EA", "video_title": "How to Configure Smart Tracking on PTZ (Human & Vehicle Auto-Tracking)", "video_author": "HIKVISION MEA", "video_url": "https://www.youtube.com/watch?v=2HVDI0Lr5EA", "embed_url": "https://www.youtube-nocookie.com/embed/2HVDI0Lr5EA?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/2HVDI0Lr5EA/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}, {"id": 28, "name": "Behaviour/event-based analytics where legally and technically appropriate", "category": "Tracking & Behaviour", "icon": "zap", "one_liner": "Detects complex human actions and anomalous security incidents, such as fighting, running, distress gestures, or erratic movements.", "what_it_does": "Applies spatio-temporal deep-learning networks to recognize predefined anomalous human behaviors, such as physical fighting, aggressive shoving, running in secured areas, or distress waving.", "distinction": "Analyzes dynamic human interactions and complex bodily behaviors over time, moving beyond simple presence or object classification into intent and event understanding.", "compliance_note": "Deployed where legally and technically appropriate; requires rigorous operational safeguards, algorithmic governance, and privacy compliance.", "use_case": "Correctional facilities, public transit platforms, school corridors, entertainment venues, and bank branches.", "video_id": "HTKbnzz4Ty4", "video_title": "Milesight AI Violence & Abnormal Behavior Detection Demo", "video_author": "Milesight Security", "video_url": "https://www.youtube.com/watch?v=HTKbnzz4Ty4", "embed_url": "https://www.youtube-nocookie.com/embed/HTKbnzz4Ty4?rel=0", "thumbnail_url": "https://i.ytimg.com/vi/HTKbnzz4Ty4/maxresdefault.jpg", "thumbnail_variant": "maxresdefault.jpg"}];
     const aiCategoryColors = {"Detection & Recognition": {"accent": "#00E5FF", "bg": "rgba(0, 229, 255, 0.1)", "border": "rgba(0, 229, 255, 0.35)"}, "Movement & Zone Analytics": {"accent": "#10B981", "bg": "rgba(16, 185, 129, 0.1)", "border": "rgba(16, 185, 129, 0.35)"}, "Crowd & Counting Analytics": {"accent": "#A78BFA", "bg": "rgba(167, 139, 250, 0.1)", "border": "rgba(167, 139, 250, 0.35)"}, "Object Analytics": {"accent": "#F59E0B", "bg": "rgba(245, 158, 11, 0.1)", "border": "rgba(245, 158, 11, 0.35)"}, "Camera Health": {"accent": "#F43F5E", "bg": "rgba(244, 63, 94, 0.1)", "border": "rgba(244, 63, 94, 0.35)"}, "Safety Analytics": {"accent": "#FB923C", "bg": "rgba(251, 146, 60, 0.1)", "border": "rgba(251, 146, 60, 0.35)"}, "Tracking & Behaviour": {"accent": "#38BDF8", "bg": "rgba(56, 189, 248, 0.1)", "border": "rgba(56, 189, 248, 0.35)"}};
     const hwComponentsData = [{"id": 1, "name": "Fixed Cameras", "category": "Cameras", "one_liner": "Fixed cameras continuously monitor a defined area from a stationary viewing position.", "purpose": "Continuous, uninterrupted visual surveillance of a designated stationary scene, corridor, or entry portal.", "system_role": "Provides the foundational visual coverage layer of the surveillance system without mechanical movement.", "distinction": "Maintains a fixed viewing angle and permanent field of view, unlike PTZ cameras which move dynamically or specialized multi-sensor units.", "image": "assets/hardware/fixed-camera.jpg", "source": "Commercial Fixed IP Surveillance Camera Architecture", "source_url": "https://commons.wikimedia.org/wiki/Category:Closed-circuit_television_cameras", "license": "Technical Surveillance Reference"}, {"id": 2, "name": "Bullet Cameras", "category": "Cameras", "one_liner": "Bullet cameras are directional cameras commonly used for monitoring roads, entrances, and open areas.", "purpose": "Long-range perimeter and perimeter boundary monitoring with visible visual deterrence.", "system_role": "Serves as an overt directional monitoring point along perimeters, roadways, gates, and open facilities.", "distinction": "Features a visible cylindrical, elongated casing with built-in sunshield and high-power infrared illuminators, distinct from discreet dome housings.", "image": "assets/hardware/bullet-camera.jpg", "source": "Directional Outdoor Bullet CCTV Camera Installation", "source_url": "https://commons.wikimedia.org/wiki/Category:Closed-circuit_television_cameras", "license": "Technical Surveillance Reference"}, {"id": 3, "name": "Dome Cameras", "category": "Cameras", "one_liner": "Dome cameras provide discreet surveillance in a compact, vandal-resistant housing.", "purpose": "Unobtrusive indoor and outdoor monitoring with high protection against physical vandalism and weather exposure.", "system_role": "Delivers ceiling and wall-mounted coverage in public areas, lobbies, corridors, and transit hubs.", "distinction": "Enclosed in a durable hemispherical transparent dome that obscures lens orientation and protects against tampering, unlike exposed bullet or fixed box cameras.", "image": "assets/hardware/dome-camera.jpg", "source": "in2 Engineering / Architectural Security Documentation", "source_url": "https://www.in2engineering.com/", "license": "Technical & Architectural Reference"}, {"id": 4, "name": "PTZ Cameras", "category": "Cameras", "one_liner": "PTZ cameras can remotely pan, tilt, and zoom to monitor a large area or follow an incident.", "purpose": "Active situational tracking and high-magnification optical inspection across vast open spaces.", "system_role": "Allows security operators and automated tracking algorithms to steer the camera toward alarms and zoom in on distant details.", "distinction": "Equipped with motorized pan, tilt, and optical zoom mechanisms, unlike stationary fixed, bullet, or dome cameras.", "image": "assets/hardware/ptz-camera.jpg", "source": "Wikimedia Commons / Pole-Mounted PTZ Surveillance Camera", "source_url": "https://commons.wikimedia.org/wiki/File:Security_Camera-06-PTZ_mounted_on_light_pole.jpg", "license": "CC BY-SA 4.0"}, {"id": 5, "name": "ANPR Cameras", "category": "Cameras", "one_liner": "ANPR cameras capture vehicle number plates and convert them into searchable data.", "purpose": "Automated license plate recognition and vehicle identification under varying vehicle speeds and ambient lighting conditions.", "system_role": "Monitors vehicular access points, toll gates, intersections, and parking facilities to log registration plates.", "distinction": "Optimized with high-speed electronic shutters, dedicated infrared illumination, and optical filtering to eliminate headlight glare, unlike general overview cameras.", "image": "assets/hardware/anpr-camera.jpg", "source": "Jenoptik Traffic Solutions / Roadside Vector ANPR Highway Setup", "source_url": "https://www.jenoptik.com/", "license": "Technical & Traffic Solutions Reference"}, {"id": 6, "name": "Speed Detection Cameras", "category": "Cameras", "one_liner": "Speed detection cameras identify vehicles and estimate or measure their travel speed.", "purpose": "Traffic speed monitoring and roadway enforcement to identify speeding infractions.", "system_role": "Integrates with radar, lidar, or calibrated distance sensors to measure and log vehicle velocity along transit corridors.", "distinction": "Specifically calibrated with Doppler radar, laser timing, or dual-trigger sensors to calculate velocity, unlike standard ANPR or traffic cameras.", "image": "assets/hardware/speed-camera.jpg", "source": "Wikimedia Commons / Expressway Speed Enforcement Gantry", "source_url": "https://commons.wikimedia.org/wiki/File:100kph_Average_Spd_Lmt_Enforcement_Start_Camera_in_Seoul-Yangyang_Expwy_Inje_IC-WYangyang_IC(Yangyang_Dir)_2.jpg", "license": "CC BY-SA 4.0"}, {"id": 7, "name": "Facial Recognition Cameras, wherever authorized", "category": "Cameras", "one_liner": "Facial recognition cameras capture standardized facial images for identity verification where legally authorized.", "purpose": "High-accuracy facial feature capture for authorized access control and watchlist alerting.", "system_role": "Installed at eye-level transit chokepoints and security gates to provide optimal biometric captures for verification engines.", "distinction": "Calibrated with specific pixel-density thresholds, focal lengths, and balanced frontal illumination to capture standardized facial geometries, unlike wide-angle surveillance cameras.", "image": "assets/hardware/facial-recognition-camera.jpg", "source": "High-Security Anti-Ligature Corner Sensor & Camera Architecture", "source_url": "https://commons.wikimedia.org/wiki/Category:Security_cameras", "license": "Institutional & Correctional Security Reference"}, {"id": 8, "name": "Thermal Cameras, wherever required", "category": "Cameras", "one_liner": "Thermal cameras detect heat signatures and radiation, enabling surveillance in complete darkness and adverse weather.", "purpose": "Long-range perimeter protection and temperature anomaly monitoring independent of visible light.", "system_role": "Detects intruders, vehicles, and fire hazards through total darkness, fog, smoke, rain, and thick foliage.", "distinction": "Forms images using thermal infrared radiation (heat emissions) rather than visible light, operating where optical cameras are blind.", "image": "assets/hardware/thermal-camera.jpg", "source": "Police Magazine / Bobit Studios Pole-Mounted Thermal Camera", "source_url": "https://www.policemag.com/", "license": "Technical & Law Enforcement Reference"}, {"id": 9, "name": "Specialized Cameras", "category": "Cameras", "one_liner": "Specialized cameras deliver purpose-built imaging for extreme environments or unique operational requirements.", "purpose": "Surveillance in hazardous environments, extreme industrial zones, or wide 360-degree panoramic overviews.", "system_role": "Provides explosion-proof, corrosion-resistant, fisheye panoramic, or underwater coverage in specialized operational sectors.", "distinction": "Engineered with certified physical enclosures (explosion-proof ratings, marine-grade stainless steel) or multi-sensor optical arrays, distinct from standard commercial cameras.", "image": "assets/hardware/specialized-camera.jpg", "source": "Wikimedia Commons / Panoramic Multi-Sensor Transit Camera", "source_url": "https://commons.wikimedia.org/wiki/File:Panorama-style_surveillance_camera_at_K%C3%B6ln_Messe-Deutz_station.jpg", "license": "CC BY-SA 4.0"}, {"id": 10, "name": "NVRs", "category": "Compute & Video Management", "one_liner": "NVRs record and manage video streams received from network cameras.", "purpose": "Dedicated appliance-based video stream ingestion, recording, storage management, and playback.", "system_role": "Acts as a standalone recording hub that captures IP camera streams over the local network and provides recorded evidence retrieval.", "distinction": "A dedicated hardware recording appliance with embedded firmware and onboard drive bays, unlike general-purpose multi-application compute servers.", "image": "assets/hardware/nvr.jpg", "source": "Wikimedia Commons / Category:Network Video Recorders", "source_url": "https://commons.wikimedia.org/wiki/File:Annke_PoE_Network_Video_Recorder_(NVR).jpg", "license": "CC BY 2.0"}, {"id": 11, "name": "Servers", "category": "Compute & Video Management", "one_liner": "Servers provide the computing resources required for video management, analytics, and system services.", "purpose": "Centralized execution of enterprise VMS services, database operations, user authentication, and AI inference workloads.", "system_role": "Hosts core management software, directory services, API gateways, and computational surveillance algorithms.", "distinction": "General-purpose enterprise compute hardware (CPU/GPU) running server operating systems, providing computational processing power rather than mere storage capacity.", "image": "assets/hardware/servers.jpg", "source": "Unsplash / Enterprise Data Center Server Rack", "source_url": "https://unsplash.com/photos/ef010cbdcc31", "license": "Unsplash Commercial License (Free to use)"}, {"id": 12, "name": "Storage", "category": "Compute & Video Management", "one_liner": "Storage systems retain recorded video, events, images, and system data for later review.", "purpose": "High-capacity, redundant long-term video retention and archival storage.", "system_role": "Retains recorded video and surveillance data according to the configured retention policy with RAID data protection.", "distinction": "Dedicated raw and formatted disk capacity (SAN/NAS/DAS/JBOD arrays) engineered for continuous write-intensive video payloads, distinct from compute servers or VMS software.", "image": "assets/hardware/storage.jpg", "source": "Enterprise Hard Disk Drive Magnetic Media & Storage Architecture", "source_url": "https://commons.wikimedia.org/wiki/Category:Hard_disk_drives", "license": "Storage Hardware Reference"}, {"id": 13, "name": "VMS", "category": "Compute & Video Management", "one_liner": "A Video Management System provides the software platform used to view, record, search, and manage cameras.", "purpose": "Centralized command-and-control software enabling operators to monitor live feeds, configure cameras, and investigate incidents.", "system_role": "Unifies disparate cameras, encoders, and recording servers into a cohesive, searchable user interface.", "distinction": "The primary operational software platform for surveillance control, unlike the underlying compute server hardware or individual camera firmware.", "image": "assets/hardware/vms.jpg", "source": "Global Video Management & Security Operations Interface", "source_url": "https://commons.wikimedia.org/wiki/Category:Video_monitors_in_control_rooms", "license": "Surveillance Network Operations Reference"}, {"id": 14, "name": "AI Analytics", "category": "Compute & Video Management", "one_liner": "AI analytics automatically examine video to detect people, vehicles, events, and other predefined conditions.", "purpose": "Automated video intelligence extraction that converts raw video pixels into actionable alarms and searchable metadata.", "system_role": "Processes live video streams to detect anomalies, line crossings, intrusions, and specific targets without requiring continuous human screen monitoring.", "distinction": "Focuses on extracting behavioral intelligence and metadata from visual streams, unlike cybersecurity components which protect the network infrastructure.", "image": "assets/hardware/ai-analytics.jpg", "source": "Wikimedia Commons / Computer Vision Object Detection Bounding Boxes", "source_url": "https://commons.wikimedia.org/wiki/File:Intersection_over_Union_-_object_detection_bounding_boxes.jpg", "license": "CC BY-SA 4.0"}, {"id": 15, "name": "PoE Switches", "category": "Networking & Connectivity", "one_liner": "PoE switches connect network cameras while supplying power through the same Ethernet cable.", "purpose": "Edge connectivity and simultaneous transmission of data and electrical power (Power over Ethernet) to cameras.", "system_role": "Aggregates edge cameras in field distribution cabinets and supplies power using standard Cat6 cabling.", "distinction": "Provides direct edge-device power delivery (PoE/PoE+/PoE++) to endpoints, unlike core/distribution switches which route backbone traffic.", "image": "assets/hardware/poe-switch.jpg", "source": "Wikimedia Commons / Commercial 8-Port PoE Network Switch", "source_url": "https://commons.wikimedia.org/wiki/File:Poe_Switch_8_Port,_Power_Up_Your_Network_with_Ease.jpg", "license": "CC BY-SA 4.0"}, {"id": 16, "name": "Core/Distribution Switches", "category": "Networking & Connectivity", "one_liner": "Core and distribution switches connect major parts of the surveillance network and carry high volumes of data.", "purpose": "High-throughput backbone routing, aggregation, and traffic management between field switches and the control center.", "system_role": "Handles multi-gigabit video transmission across distribution layers to ensure high network reliability and low latency.", "distinction": "Operates at the central network aggregation layer with high-speed fiber uplinks (10G/40G/100G) and advanced L3 routing, unlike edge access PoE switches.", "image": "assets/hardware/core-switch.jpg", "source": "Wikimedia Commons / Enterprise Modular Core Switch Chassis", "source_url": "https://commons.wikimedia.org/wiki/File:1_Gbps_Core_Switch_China_Telecom_Stall.jpg", "license": "CC BY-SA 3.0"}, {"id": 17, "name": "Fiber Equipment", "category": "Networking & Connectivity", "one_liner": "Fiber equipment provides long-distance, high-bandwidth network connectivity between surveillance locations.", "purpose": "Immunity to electromagnetic interference and high-speed data transport over extended distances (kilometers).", "system_role": "Links street surveillance poles, remote substations, and zonal control rooms back to the central command facility.", "distinction": "Utilizes optical fiber cables, SFP transceivers, and optical distribution frames (ODF) for light-based transmission, overcoming the 100-meter physical limit of copper Ethernet.", "image": "assets/hardware/fiber-equipment.jpg", "source": "MTA / Wikimedia Commons / Fiber Optic Communication Rack & ODF", "source_url": "https://commons.wikimedia.org/wiki/File:Layout_and_installation_of_fiber_optic_cables_for_a_communication_rack_for_a_power_substation_located_in_Queens._(49248066228).jpg", "license": "CC BY 2.0"}, {"id": 18, "name": "Wireless Equipment", "category": "Networking & Connectivity", "one_liner": "Wireless equipment provides network connectivity where physical cabling is difficult or impractical.", "purpose": "Point-to-point and point-to-multipoint wireless radio links for camera connectivity across geographic barriers.", "system_role": "Transmits surveillance streams across railway crossings, open highways, water bodies, and temporary monitoring stations.", "distinction": "Transmits data via radio frequency (RF) links rather than physical copper or optical cables, enabling rapid deployment in remote terrain.", "image": "assets/hardware/wireless-equipment.jpg", "source": "Unsplash / Point-to-Point Microwave Link Antennas on Tower", "source_url": "https://unsplash.com/photos/ca5e3f4abd8c", "license": "Unsplash Commercial License (Free to use)"}, {"id": 19, "name": "UPS", "category": "Power, Control & Physical Infrastructure", "one_liner": "UPS systems provide backup power so surveillance equipment can continue operating during power interruptions.", "purpose": "Continuous electrical power conditioning and emergency battery backup during utility outages.", "system_role": "Prevents data corruption, system downtime, and surveillance blindness when utility electrical power fluctuates or fails.", "distinction": "Dedicated battery and power conversion hardware ensuring continuous electrical availability, distinct from data networking hardware.", "image": "assets/hardware/ups.jpg", "source": "Wikimedia Commons / 19-inch Rackmount UPS in Server Enclosure", "source_url": "https://commons.wikimedia.org/wiki/File:Line-Interactive_USV_(unten_links),_die_einen_Server_(oben,_im_19-Zoll-Format)_versorgt..jpg", "license": "CC BY-SA 4.0"}, {"id": 20, "name": "Displays", "category": "Power, Control & Physical Infrastructure", "one_liner": "Displays provide operators with live camera views, alarms, maps, and recorded footage.", "purpose": "High-definition visual presentation of surveillance video matrices, interactive maps, and alarm popups.", "system_role": "Enables 24/7 continuous visual monitoring for control room operators via commercial surveillance monitors and large video walls.", "distinction": "Visual output hardware for human viewing, distinct from the video processing engines and storage servers that generate the feeds.", "image": "assets/hardware/displays.jpg", "source": "Wikimedia Commons / Municipal CCTV Video Monitoring Wall (GGIM-FOZ)", "source_url": "https://commons.wikimedia.org/wiki/File:Central_de_Videomonitoramento_-_GGIM-FOZ.JPG", "license": "CC BY-SA 3.0"}, {"id": 21, "name": "Racks", "category": "Power, Control & Physical Infrastructure", "one_liner": "Racks securely organize and protect servers, switches, storage, and other equipment.", "purpose": "Standardized physical housing, structured cable routing, ventilation, and physical security for critical rackmount hardware.", "system_role": "Houses servers, NVRs, core switches, patch panels, and UPS units inside control rooms and outdoor field enclosures.", "distinction": "Mechanical and physical housing framework (19-inch standard enclosures), distinct from the electronic computing equipment installed inside them.", "image": "assets/hardware/racks.jpg", "source": "Wikimedia Commons / 19-Inch Equipment Rack with Cable Management", "source_url": "https://commons.wikimedia.org/wiki/File:Server_Cable_Management_Arm_(2).jpg", "license": "CC BY 2.0"}, {"id": 22, "name": "Network Equipment", "category": "Networking & Connectivity", "one_liner": "Network equipment connects and manages communication between cameras, servers, control rooms, and other systems.", "purpose": "Routing, gateway interconnection, industrial protocol conversion, and physical patch distribution.", "system_role": "Ensures seamless packet transport, network segmentation (VLANs), and bandwidth prioritization across the surveillance ecosystem.", "distinction": "Encompasses the overarching routing, gateway, and patch infrastructure that binds access switches, distribution layers, and servers together.", "image": "assets/hardware/network-equipment.jpg", "source": "Unsplash / Enterprise Networking & Security Gateway Infrastructure", "source_url": "https://unsplash.com/", "license": "Unsplash Commercial License (Free to use)"}, {"id": 23, "name": "Accessories", "category": "Power, Control & Physical Infrastructure", "one_liner": "Accessories include the supporting hardware required to install, connect, protect, and maintain the surveillance system.", "purpose": "Physical mounting, environmental weatherproofing, surge suppression, and structural support for edge devices.", "system_role": "Provides mounting brackets, pole adapters, weatherproof junction boxes, conduit connections, and power supplies.", "distinction": "Supporting physical mounting and protective accessories, rather than active computing or image-capturing electronic hardware.", "image": "assets/hardware/accessories.jpg", "source": "Unsplash / CCTV Hardware Mounting Brackets & Installation Fittings", "source_url": "https://unsplash.com/", "license": "Unsplash Commercial License (Free to use)"}, {"id": 24, "name": "Software", "category": "Software & Security", "one_liner": "Software provides the applications and services required to operate, manage, and monitor the surveillance platform.", "purpose": "Operating system environments, system diagnostic utilities, database management systems, and client interfaces.", "system_role": "Enables all system processes to execute, communicate, and coordinate across the distributed hardware infrastructure.", "distinction": "The broader computational software ecosystem and operating environment, distinct from the specialized VMS application layer.", "image": "assets/hardware/software.jpg", "source": "Unsplash / Enterprise Surveillance Management & Telemetry Interface", "source_url": "https://unsplash.com/photos/bebda4e38f71", "license": "Unsplash Commercial License (Free to use)"}, {"id": 25, "name": "Licenses", "category": "Software & Security", "one_liner": "Licenses authorize the use of software, analytics, and system features according to deployment requirements.", "purpose": "Legal and functional entitlement validation for camera channels, AI features, server connections, and system expansions.", "system_role": "Activates specific camera channels, advanced AI analytics rules, client connections, and ongoing software maintenance.", "distinction": "Legal and digital entitlement tokens authorizing feature usage, distinct from the executable software code itself.", "image": "assets/hardware/licenses.jpg", "source": "Unsplash / Digital Security Key & Software Entitlement Authorization", "source_url": "https://unsplash.com/photos/a83a8bd57fbe", "license": "Unsplash Commercial License (Free to use)"}, {"id": 26, "name": "Cybersecurity Components", "category": "Software & Security", "one_liner": "Cybersecurity components protect cameras, networks, servers, and surveillance data against unauthorized access and threats.", "purpose": "Infrastructure hardening, encrypted transmission, boundary firewalls, and vulnerability management.", "system_role": "Shields IP cameras from botnet attacks, enforces multi-factor authentication, audits access logs, and encrypts video at rest and in transit.", "distinction": "Protects the surveillance infrastructure and data integrity from malicious network threats, unlike AI analytics which analyzes video content.", "image": "assets/hardware/cybersecurity.jpg", "source": "Unsplash / Security Operations Center (SOC) Cyber Defense Monitoring", "source_url": "https://unsplash.com/photos/322da13575f3", "license": "Unsplash Commercial License (Free to use)"}];
     const hwCategoryColors = {"Cameras": {"accent": "#00E5FF", "bg": "rgba(0, 229, 255, 0.1)", "border": "rgba(0, 229, 255, 0.35)"}, "Compute & Video Management": {"accent": "#38BDF8", "bg": "rgba(56, 189, 248, 0.1)", "border": "rgba(56, 189, 248, 0.35)"}, "Networking & Connectivity": {"accent": "#10B981", "bg": "rgba(16, 185, 129, 0.1)", "border": "rgba(16, 185, 129, 0.35)"}, "Power, Control & Physical Infrastructure": {"accent": "#F59E0B", "bg": "rgba(245, 158, 11, 0.1)", "border": "rgba(245, 158, 11, 0.35)"}, "Software & Security": {"accent": "#A78BFA", "bg": "rgba(167, 139, 250, 0.1)", "border": "rgba(167, 139, 250, 0.35)"}};
@@ -1997,17 +2026,34 @@
     let searchQuery = '';
 
     // High-Resolution YouTube Thumbnail Helper with Fallbacks
-    function getYouTubeThumbUrl(videoId) {
-      return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+    function getYouTubeThumbUrl(item) {
+      if (item && item.thumbnail_url) return item.thumbnail_url;
+      const vid = (typeof item === 'object') ? item.video_id : item;
+      return `https://i.ytimg.com/vi/${vid}/maxresdefault.jpg`;
     }
 
-    function handleThumbError(img, videoId) {
-      if (img.src.includes('maxresdefault')) {
-        img.src = `https://img.youtube.com/vi/${videoId}/sddefault.jpg`;
-      } else if (img.src.includes('sddefault')) {
-        img.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-      } else if (img.src.includes('hqdefault')) {
-        img.src = `https://img.youtube.com/vi/${videoId}/default.jpg`;
+    function loadBestYouTubeThumbnail(videoId, imgElement) {
+      if (!imgElement) return;
+      const cascade = ['maxresdefault.jpg', 'sddefault.jpg', 'hqdefault.jpg', 'mqdefault.jpg', 'default.jpg'];
+      const currentSrc = imgElement.src || '';
+      let currentIndex = -1;
+
+      for (let i = 0; i < cascade.length; i++) {
+        if (currentSrc.includes(cascade[i])) {
+          currentIndex = i;
+          break;
+        }
+      }
+
+      const nextIndex = currentIndex + 1;
+      if (nextIndex < cascade.length) {
+        const nextUrl = `https://i.ytimg.com/vi/${videoId}/${cascade[nextIndex]}`;
+        imgElement.src = nextUrl;
+        if (imgElement.parentElement && imgElement.parentElement.classList.contains('video-preview-cover')) {
+          imgElement.parentElement.style.backgroundImage = `url('${nextUrl}')`;
+        }
+      } else {
+        imgElement.onerror = null;
       }
     }
 
@@ -2206,13 +2252,13 @@
       }
 
       const escapedTitle = item.video_title.replace(/'/g, "\\'");
-      const maxThumb = getYouTubeThumbUrl(item.video_id);
+      const thumbUrl = item.thumbnail_url || `https://i.ytimg.com/vi/${item.video_id}/maxresdefault.jpg`;
 
       const slideContainer = document.getElementById('aiSlideContent');
       slideContainer.innerHTML = `
         <div class="slide-info-col">
           <div>
-            <span class="slide-cat-badge" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};">
+            <span class="slide-cat-badge" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};" title="${item.category}">
               ${item.category} &bull; Capability #${String(item.id).padStart(2, '0')}
             </span>
             <h2 class="slide-title" style="margin-top: 10px;">${item.id}. ${item.name}</h2>
@@ -2251,8 +2297,8 @@
 
         <div class="slide-video-col">
           <div class="video-player-container" id="aiVideoPlayerContainer">
-            <div class="video-preview-cover" style="background-image: url('${maxThumb}');" onclick="loadActiveAIIframe('${item.video_id}', '${escapedTitle}')">
-              <img src="${maxThumb}" style="display:none;" onerror="handleThumbError(this, '${item.video_id}'); this.parentElement.style.backgroundImage = 'url(' + this.src + ')';">
+            <div class="video-preview-cover" style="background-image: url('${thumbUrl}');" onclick="loadActiveAIIframe('${item.video_id}', '${escapedTitle}')">
+              <img src="${thumbUrl}" style="display:none;" onerror="loadBestYouTubeThumbnail('${item.video_id}', this)">
               <div class="play-button-hero">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               </div>
@@ -2294,14 +2340,14 @@
 
       grid.innerHTML = items.map(item => {
         const catStyle = aiCategoryColors[item.category] || { accent: "#00E5FF", bg: "rgba(0, 229, 255, 0.1)", border: "rgba(0, 229, 255, 0.3)" };
-        const maxThumb = getYouTubeThumbUrl(item.video_id);
+        const thumbUrl = item.thumbnail_url || `https://i.ytimg.com/vi/${item.video_id}/maxresdefault.jpg`;
         const escapedTitle = item.video_title.replace(/'/g, "\\'");
         return `
           <div class="analytic-card">
             <div>
               <div class="card-top">
                 <span class="card-num">#${String(item.id).padStart(2, '0')}</span>
-                <span class="card-cat" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};">
+                <span class="card-cat" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};" title="${item.category}">
                   ${item.category}
                 </span>
               </div>
@@ -2311,7 +2357,7 @@
             <p class="card-one-liner">&ldquo;${item.one_liner}&rdquo;</p>
 
             <div class="card-thumb-wrap" onclick="jumpToAISlide(${item.id})">
-              <img src="${maxThumb}" onerror="handleThumbError(this, '${item.video_id}')" alt="${item.name} demonstration thumbnail" loading="lazy">
+              <img src="${thumbUrl}" onerror="loadBestYouTubeThumbnail('${item.video_id}', this)" alt="${item.name} demonstration thumbnail" loading="lazy">
               <div class="card-play-overlay">
                 <div class="play-circle">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -2402,7 +2448,7 @@
       slideContainer.innerHTML = `
         <div class="slide-info-col">
           <div>
-            <span class="slide-cat-badge" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};">
+            <span class="slide-cat-badge" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};" title="${item.category}">
               ${item.category} &bull; Component #${String(item.id).padStart(2, '0')}
             </span>
             <h2 class="slide-title" style="margin-top: 10px;">${item.id}. ${item.name}</h2>
@@ -2472,7 +2518,7 @@
             <div>
               <div class="card-top">
                 <span class="card-num">#${String(item.id).padStart(2, '0')}</span>
-                <span class="card-cat" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};">
+                <span class="card-cat" style="background: ${catStyle.bg}; color: ${catStyle.accent}; border: 1px solid ${catStyle.border};" title="${item.category}">
                   ${item.category}
                 </span>
               </div>
@@ -2481,7 +2527,7 @@
 
             <p class="card-one-liner">&ldquo;${item.one_liner}&rdquo;</p>
 
-            <div class="card-thumb-wrap" style="padding-top: 56.25%;" onclick="jumpToHWSlide(${item.id})">
+            <div class="card-thumb-wrap" onclick="jumpToHWSlide(${item.id})">
               <img src="${item.image}" alt="${item.name} visual" loading="lazy">
               <div class="card-play-overlay">
                 <div style="background: rgba(8, 12, 20, 0.88); border: 1px solid var(--cyan-accent); color: var(--cyan-accent); padding: 6px 14px; border-radius: 20px; font-size: 0.76rem; font-weight: 700; white-space: nowrap;">
